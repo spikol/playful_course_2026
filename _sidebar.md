@@ -8,14 +8,5 @@
   - [Day 5 — Consolidation](day_5/)
 
 - Content
-  - Activities
-    - [Detailed Programme](content/activities/Didactic_Workshop_IOT.md)
-    - ["Is this AI?" Card Deck](content/activities/Is_this_AI_card_deck.md)
-    - [LLMs in Plain Language](content/activities/LLMs_in_plain_language_storytelling_game.md)
-    - [Teach a Machine with Sticky Notes](content/activities/Teach_a_machine_with_sticky_notes.md)
-    - [The Art of the Prompt](content/activities/The_art_of_the_prompt.md)
-    - [Seminar 1 Slides](content/activities/Seminar_1_Didactic_transposition_and_AI_literacy.md)
-    - [Seminar 2 Slides](content/activities/Seminar_2_Generative_AI_how_it_works_and_why_it_fails.md)
-    - [Seminar 3 Slides](content/activities/Seminar_3_From_one_off_activity_to_teaching_sequence.md)
-    - [Sprint Briefing Slides](content/activities/Sprint_briefing_Classroom_activity_design_sprint.md)
+  - [Activities](content/activities/)
   - [Articles](content/articles/)

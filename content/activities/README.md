@@ -1,15 +1,3 @@
 # Activities
 
-Teaching guides, briefings, and slide decks for the workshop, organised by when they're used. Use the sidebar to browse individual activities, or jump in from the relevant [day](../../day_1/) page.
-
-- [Detailed Programme](Didactic_Workshop_IOT.md) — full day-by-day breakdown of the workshop
-- ["Is this AI?" Card Deck](Is_this_AI_card_deck.md) — Day 1 opener
-- [Teach a Machine with Sticky Notes](Teach_a_machine_with_sticky_notes.md) — Day 1 afternoon
-- [LLMs in Plain Language: The Storytelling Game](LLMs_in_plain_language_storytelling_game.md) — Day 2 morning
-- [The Art of the Prompt](The_art_of_the_prompt.md) — Day 2 morning
-- [Seminar 1 — Didactic transposition and AI literacy](Seminar_1_Didactic_transposition_and_AI_literacy.md)
-- [Seminar 2 — Generative AI: how it works and why it fails](Seminar_2_Generative_AI_how_it_works_and_why_it_fails.md)
-- [Seminar 3 — From one-off activity to teaching sequence](Seminar_3_From_one_off_activity_to_teaching_sequence.md)
-- [Sprint briefing — Classroom activity design sprint](Sprint_briefing_Classroom_activity_design_sprint.md)
-
-Downloadable activity packs live in [zips/](zips/).
+Coming soon.
