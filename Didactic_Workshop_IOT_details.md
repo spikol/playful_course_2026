@@ -1,6 +1,5 @@
-
-
 # Playful Programming and Artificial Intelligence
+#### Playful Programming og Kunstig intelligens i gymnasiets STEM-fag
 
 ### A 5-Day Workshop for High School Teachers
 
