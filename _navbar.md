@@ -1,0 +1,2 @@
+* [Home](/)
+* [Content](content/activities/)
