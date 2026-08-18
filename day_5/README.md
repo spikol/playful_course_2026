@@ -5,4 +5,4 @@ See the [full programme](../Didactic_Workshop_IOT_details.md#day-5--consolidatio
 
 ## Materials
 
-- [Sprint briefing (PDF)](Sprint_briefing_Classroom_activity_design_sprint.pdf)
+Coming soon.
