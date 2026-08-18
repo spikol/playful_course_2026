@@ -193,11 +193,11 @@ The workshop does not resolve the question of how to teach AI well. It tries to 
 
 ## Key Resources
 
-- CS Unplugged: csunplugged.org
-- AI Unplugged (Northwestern): sites.northwestern.edu/aiunplugged
-- Teachable Machine: teachablemachine.withgoogle.com
-- Machine Learning for Kids: machinelearningforkids.co.uk
-- Micro:bit AI tools: microbit.org/ai, microbit.org/get-started/user-guide/microbit-createai
-- Edge Impulse: edgeimpulse.com
-- Make AI Robots: makeairobots.com
-- Elements of AI: elementsofai.org
+- CS Unplugged: [csunplugged.org](https://csunplugged.org)
+- AI Unplugged (Northwestern): [sites.northwestern.edu/aiunplugged](https://sites.northwestern.edu/aiunplugged)
+- Teachable Machine: [teachablemachine.withgoogle.com](https://teachablemachine.withgoogle.com)
+- Machine Learning for Kids: [machinelearningforkids.co.uk](https://machinelearningforkids.co.uk)
+- Micro:bit AI tools: [microbit.org/ai](https://microbit.org/ai), [microbit.org/get-started/user-guide/microbit-createai](https://microbit.org/get-started/user-guide/microbit-createai)
+- Edge Impulse: [edgeimpulse.com](https://edgeimpulse.com)
+- Make AI Robots: [makeairobots.com](https://makeairobots.com)
+- Elements of AI: [elementsofai.org](https://elementsofai.org)
