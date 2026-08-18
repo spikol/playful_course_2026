@@ -1,4 +1,4 @@
-# Playful AI with IoT and Generative AI
+# Playful Programming and Artificial Intelligence
 ### A 5-Day Workshop for High School Teachers — Detailed Programme
 **University of Copenhagen · Department of Computer Science · Centre for Digital Education**
 24–27 August 2026 + 5–6 October 2026 · Universitetsparken 1, 2100 Copenhagen Ø
@@ -7,7 +7,7 @@
 
 ## Overview
 
-**Playful AI with IoT and Generative AI** is a workshop for high school teachers who are curious about artificial intelligence and want space to explore it seriously, on their own terms. Rather than offering a fixed syllabus of AI facts to absorb, the workshop treats AI as something worth arguing about, building with, and getting wrong in productive ways.
+**Playful Programming and Artificial Intelligence** is a workshop for high school teachers who are curious about artificial intelligence and want space to explore it seriously, on their own terms. Rather than offering a fixed syllabus of AI facts to absorb, the workshop treats AI as something worth arguing about, building with, and getting wrong in productive ways.
 
 The workshop is organised around the principle of didactic transposition: the idea that moving from scholarly knowledge to teachable content is not a matter of simplification alone, but of careful reconstruction. Participants encounter AI concepts first as learners, through physical activity, hands-on tinkering, and deliberate confusion, and then begin the harder work of asking what those concepts would need to become to make sense in their own classrooms.
 

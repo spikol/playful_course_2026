@@ -8,7 +8,7 @@ paginate: true
 
 # From One-Off Activity to Teaching Sequence
 
-### Seminar 3 · Playful AI with IoT and Generative AI
+### Seminar 3 · Playful Programming and Artificial Intelligence
 
 University of Copenhagen · Department of Computer Science
 

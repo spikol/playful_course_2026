@@ -1,6 +1,6 @@
 # LLMs in Plain Language: The Storytelling Game
 ### Teaching guide · Day 2 morning · 40 minutes
-*Playful AI with IoT and Generative AI · University of Copenhagen*
+*Playful Programming and Artificial Intelligence · University of Copenhagen*
 
 ---
 

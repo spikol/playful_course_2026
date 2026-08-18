@@ -8,7 +8,7 @@ paginate: true
 
 # Didactic Transposition and AI Literacy
 
-### Seminar 1 · Playful AI with IoT and Generative AI
+### Seminar 1 · Playful Programming and Artificial Intelligence
 
 University of Copenhagen · Department of Computer Science
 

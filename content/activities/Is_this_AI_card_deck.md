@@ -1,5 +1,5 @@
 # "Is this AI?" — Card Deck
-### Opening activity, Day 1 · Playful AI with IoT and Generative AI
+### Opening activity, Day 1 · Playful Programming and Artificial Intelligence
 
 36 cards, designed so that sorting generates maximum argument. Roughly a third lean "yes", a third lean "no", and a third are deliberately unstable. Groups sort into three piles: **AI / not AI / it depends**, then defend their sorting to another group.
 

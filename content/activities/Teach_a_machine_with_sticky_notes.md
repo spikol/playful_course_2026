@@ -1,6 +1,6 @@
 # Teach a Machine with Sticky Notes
 ### Teaching guide · Day 1 afternoon · 45 minutes
-*Playful AI with IoT and Generative AI · University of Copenhagen*
+*Playful Programming and Artificial Intelligence · University of Copenhagen*
 
 ---
 

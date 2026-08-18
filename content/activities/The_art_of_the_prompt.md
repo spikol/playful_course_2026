@@ -1,6 +1,6 @@
 # The Art of the Prompt
 ### Teaching guide · Day 2 morning · 50 minutes
-*Playful AI with IoT and Generative AI · University of Copenhagen*
+*Playful Programming and Artificial Intelligence · University of Copenhagen*
 
 ---
 

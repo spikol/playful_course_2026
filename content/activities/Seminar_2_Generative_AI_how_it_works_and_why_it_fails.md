@@ -8,7 +8,7 @@ paginate: true
 
 # Generative AI: How It Works and Why It Fails
 
-### Seminar 2 · Playful AI with IoT and Generative AI
+### Seminar 2 · Playful Programming and Artificial Intelligence
 
 University of Copenhagen · Department of Computer Science
 
