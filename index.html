@@ -8,18 +8,19 @@
   <meta name="description" content="Playful Programming and Artificial Intelligence — a 5-day workshop for high school teachers, University of Copenhagen.">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
   <style>
-    /* Dark-mode recolor of the vue.css base theme, laid out with a
-       simple top navbar only (no nested sidebar) — same navbar-only
-       structure as https://spikol.github.io/playful_facilitator/#/ */
+    /* Marp "Gaia" inspired recolor of the vue.css base theme — warm tan
+       background, terracotta headings, sage-green links — laid out
+       with a simple top navbar only (no nested sidebar), same
+       navbar-only structure as https://spikol.github.io/playful_facilitator/#/ */
     :root {
-      --bg: #16181d;
-      --panel: #1f232b;
-      --ink: #f2f0e8;
-      --muted: #9aa0ab;
-      --accent: #ffd166;
-      --accent-2: #6ec6ff;
-      --line: #343943;
-      --theme-color: var(--accent-2);
+      --bg: #e8dcc0;
+      --panel: #dccba0;
+      --ink: #33281c;
+      --muted: #6b5a42;
+      --accent: #a0402b;
+      --accent-2: #3f6b52;
+      --line: #c4b182;
+      --theme-color: var(--accent);
     }
 
     html, body {
@@ -29,6 +30,31 @@
 
     body {
       font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3,
+    .markdown-section h4 {
+      color: var(--accent) !important;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+
+    /* Docsify wraps heading text in <a class="anchor"><span> for deep
+       links; vue.css sets .anchor span's color directly, which
+       overrides the inherited heading color regardless of !important
+       above (a direct rule on a descendant beats inheritance from an
+       ancestor). Target it explicitly too. */
+    .markdown-section h1 .anchor,
+    .markdown-section h1 .anchor span,
+    .markdown-section h2 .anchor,
+    .markdown-section h2 .anchor span,
+    .markdown-section h3 .anchor,
+    .markdown-section h3 .anchor span,
+    .markdown-section h4 .anchor,
+    .markdown-section h4 .anchor span {
+      color: var(--accent) !important;
     }
 
     .sidebar, .sidebar-toggle {
@@ -49,10 +75,6 @@
       color: var(--ink);
     }
 
-    .markdown-section h1,
-    .markdown-section h2,
-    .markdown-section h3,
-    .markdown-section h4,
     .markdown-section strong {
       color: var(--ink);
     }
