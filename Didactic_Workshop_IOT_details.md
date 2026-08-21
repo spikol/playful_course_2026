@@ -195,6 +195,7 @@ The workshop does not resolve the question of how to teach AI well. It tries to 
 **Browser-based track (primary):**
 - p5.js: [p5js.org](https://p5js.org)
 - p5.js Web Editor: [editor.p5js.org](https://editor.p5js.org)
+- This course's p5.js prototype collection: [editor.p5js.org/spikol/collections/kKChPpmyf](https://editor.p5js.org/spikol/collections/kKChPpmyf)
 - ml5.js: [ml5js.org](https://ml5js.org)
 - Claude (Anthropic) API docs: [platform.claude.com](https://platform.claude.com)
 
