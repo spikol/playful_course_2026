@@ -57,12 +57,12 @@ Participants receive a deck of cards naming everyday objects and behaviours: a t
 - Related: CS Unplugged pedagogy overview: https://www.csunplugged.org/en/
 - Facilitation note: end by asking each group to write their working definition of AI on the wall. These definitions stay up all five days and get revised.
 
-**The world as data: sensor blind tasting (45 min)**
-Each table gets a micro:bit V2 running a simple telemetry script (temperature, light level, accelerometer, sound level). Devices are placed in mystery environments prepared in advance: a dark cupboard, a sunny windowsill, a box with a hand warmer inside, next to a speaker playing quiet music. Teams read only the data stream and guess the environment. Then they design a mystery environment for another team.
+**The world as data: sensor blind tasting (45 min)** *(updated — now p5.js, no hardware required)*
+Each table opens the `webcam-sensor` prototype in a browser: p5.js reads the laptop's own webcam in real time — average brightness, dominant colour, motion between frames — and streams that reading to Claude, which narrates what it thinks the room is like, in a persona the team picks (nervous houseplant, weather forecaster, detective on a stakeout). Teams rotate the laptop into mystery setups prepared in advance: face it at a dark corner, wave a hand in front of it, cover the lens, point it out a sunny window. They read only Claude's narration and guess what's happening — then design a mystery scenario for another team to guess from the narration alone. No flashing, no wiring, nothing to break before the activity even starts.
 
-- Sensor documentation: https://microbit.org/get-started/features/sensors/
-- Data logging with MakeCode: https://microbit.org/news/2022-06-18/easy-microbit-data-logging-with-makecode/
-- The telemetry MicroPython script from the workshop technical guide (Method 1, on-device part) can be used as-is; teams do not need to understand the code yet.
+- Prototype and source: `dev/web_prototypes/static/webcam-sensor/` in this course's repository, or the p5.js Web Editor collection: https://editor.p5js.org/spikol/collections/kKChPpmyf
+- Runs from a laptop's own webcam via `p5.Video`/`loadPixels()`; Claude is reached through a small shared proxy (or a personal, spend-capped API key) — see the prototype's README for both setups.
+- Facilitators do not need to explain the code; the activity works the same "blind tasting" way as the original, with the machine's *narration* standing in for the raw sensor reading.
 
 ### 10:30–11:00 · Discuss
 What counts as sensing? Where did the data mislead you, and why? The machine "saw" a number; you saw a sunny windowsill. What happened in between? This gap between measurement and meaning becomes a recurring theme.
@@ -75,12 +75,13 @@ Introduction to didactic transposition as developed in the French didactics trad
 
 ### 13:00–14:30 · Work
 
-**Build your first sensing thing (45 min)**
-Low-stakes first circuit. Participants choose a track:
-- No-code: MakeCode blocks in the browser, https://makecode.microbit.org/ — make the display respond to light, shake, or sound
-- Light Python: micro:bit Python Editor or Thonny, flashing a 10-line MicroPython script
+**Word-magnet haiku (45 min)** *(updated — replaces the original circuit-building activity)*
+A fridge-magnet-style bank of ~90 words sits on a p5.js canvas (concrete nouns, sensory adjectives, verbs). Participants drag 5–7 words into a tray and click Generate; Claude writes a haiku using only, or mostly, those words, and the result appears next to the selection. Low-stakes and immediate — no wiring, no flashing, nothing to install. The direct payoff: participants watch their own constrained input get transformed by the model, which previews Day 2's "Art of the Prompt" a day early — the constraint, not an open text box, is doing the creative work.
 
-Goal: a device that notices something about its environment and reacts visibly. Broken attempts are shared as readily as working ones.
+Goal: everyone produces at least one haiku they're willing to read aloud. Odd or broken results (haikus that ignore the syllable count, or lean on just two of the seven words) are shared as readily as clean ones — they're a natural opening for "why did it do that?"
+
+- Prototype and source: `dev/web_prototypes/static/word-magnet/` (server-hosted) or `word-magnet-standalone/` (paste-into-p5-editor, bring your own API key) in this course's repository
+- p5.js Web Editor collection: https://editor.p5js.org/spikol/collections/kKChPpmyf
 
 **Teach a machine with sticky notes (45 min)** — *full teaching guide: Teach_a_machine_with_sticky_notes.md*
 Unplugged classification. Each table receives a pile of data cards (for example, images of animals, or short text snippets) and builds a paper decision tree by voting on which questions best split the pile. Then a held-out test set arrives, and the classifier fails in interesting ways: overfitting, ambiguous cases, missing features.
@@ -120,19 +121,19 @@ Conceptual (not mathematical) walkthrough of the transformer pipeline: tokens, e
 
 ### 13:00–14:30 · Work
 
-**Give your sensor a voice (60 min)**
-The centrepiece. Participants connect the micro:bit to an LLM using the bridge pattern from the workshop technical guide:
+**Give your sensor a voice (60 min)** *(updated — now trained live in-browser, no serial bridge)*
+The centrepiece. Participants train a live webcam gesture or pose classifier directly in the browser (ml5.js `featureExtractor` + `KNNClassifier`, no export step, no round trip through the Teachable Machine website):
 
-1. Flash the telemetry script (MicroPython, provided): Button A packages temperature, light, accelerometer, and sound level into a serial message.
-2. Run the Python bridge on the laptop (provided, pyserial + Anthropic API): the script listens for sensor data, sends it to Claude with a system prompt, and returns the response to scroll across the micro:bit's LEDs.
-3. The creative move: rewrite the system prompt. "You are a nervous houseplant." "You are a detective describing a crime scene." "You are a weather poet." The same data, radically different narration.
+1. Open the `teachable-classifier` prototype and click "Add example" a few times per class while posing (e.g. neutral / hands up / arms crossed) — no training run to wait on, classification starts immediately.
+2. The classifier runs continuously against the live webcam feed; each time its top class changes, that label and confidence score are sent to Claude with a system prompt.
+3. The creative move: rewrite the persona. "You are a nervous houseplant." "You are a detective describing a crime scene." "You are a nature documentary narrator." The same classifier output, radically different narration.
 
-- Full code and setup: workshop technical guide, Method 1 (Claude via Python bridge)
-- Prerequisite installs are done in advance or from a provided USB stick: `pip install anthropic pyserial`
-- Alternative for the no-code track: Teachable Machine via Web Bluetooth and Scratch-style blocks (technical guide, Method 3), training an image model at https://teachablemachine.withgoogle.com/ and connecting it to the micro:bit without any text code
+- Prototype and source: `dev/web_prototypes/static/teachable-classifier/` in this course's repository
+- Everything runs in one browser tab — no pip installs, no serial port, no USB stick
+- Same two-stage pipeline as the original activity (classifier → language model), just without the micro:bit + Python bridge in between
 
 **The lying, confident machine (30 min)**
-Participants deliberately break their setup: feed the LLM sensor data with a misleading system prompt, or ask it to explain readings it cannot possibly know the cause of. The device confidently narrates fiction. Groups collect the best examples of confident wrongness for the wall.
+Participants deliberately break their setup: give Claude a misleading persona, or ask it to explain a classification it cannot possibly know the cause of. It confidently narrates fiction. Groups collect the best examples of confident wrongness for the wall — this can build directly on the classifier trained an hour earlier.
 
 ### 14:30–15:00 · Discuss
 What would you actually show your students, and in what order? What would you warn about, and what would you let them discover? What does honest AI literacy look like at gymnasium level, given what you watched the machine do this afternoon?
@@ -144,7 +145,7 @@ What would you actually show your students, and in what order? What would you wa
 
 ### 09:00–10:30 · Work
 **Classroom activity design sprint (start)**
-In pairs or small groups, participants begin developing an IoT + AI activity for their own teaching context. Constraints: cheap (under 200 DKK in materials beyond the micro:bit), safe to fail, and genuinely playful. Groups start from a provided design canvas: target class and subject, core concept, what students do, what could go wrong, and what the activity deliberately simplifies.
+In pairs or small groups, participants begin developing an IoT + AI activity for their own teaching context, using either track from the workshop (browser-based, or micro:bit). Constraints: cheap (a laptop and a browser, or under 200 DKK in materials for the hardware track), safe to fail, and genuinely playful. Groups start from a provided design canvas: target class and subject, core concept, what students do, what could go wrong, and what the activity deliberately simplifies.
 
 Idea starters available in the room:
 - Teachable Machine image/audio/pose projects: https://teachablemachine.withgoogle.com/
@@ -230,29 +231,42 @@ The workshop does not resolve the question of how to teach AI well. It tries to 
 
 ## Hardware and Programming
 
-**Hardware:** BBC micro:bit V2 throughout (built-in temperature, light, accelerometer, and sound sensors; browser-based programming; no installation for the no-code track). Arduino remains available for participants with prior experience who want a higher ceiling.
+*(updated section — the workshop's Day 1–2 default has shifted from micro:bit hardware to browser-based p5.js + Claude; micro:bit remains available as an optional track.)*
+
+**Primary approach: browser-based, p5.js + Claude.** No flashing, no wiring, no serial bridge — the Day 1–2 hands-on activities above run entirely in a laptop browser. p5.js reads the webcam (or mouse/microphone) as a "sensor," ml5.js trains a live classifier in-browser, and Claude does the narrating, either through a small shared server-side proxy or a personal, spend-capped API key entered directly in the page. Working prototypes and facilitator notes live in `dev/web_prototypes/` in the course repository.
+
+**Optional hardware track:** BBC micro:bit V2 (built-in temperature, light, accelerometer, and sound sensors; browser-based MakeCode programming) remains available for groups who want a physical-sensor version of the activities, or for Day 3 project work. Arduino remains available for participants with prior experience who want a higher ceiling.
 
 **Programming tracks (self-selected on Day 1):**
-- No-code: MakeCode blocks, https://makecode.microbit.org/, plus Teachable Machine via Web Bluetooth (technical guide, Method 3)
-- Light Python: MicroPython on the device (Thonny or the micro:bit Python Editor) plus short bridge scripts on the laptop (10–40 lines, provided and modified rather than written from scratch)
+- Browser-based (default): drag, click, watch — no programming required for Word-magnet haiku or the webcam-sensor/classifier activities
+- No-code hardware: MakeCode blocks, https://makecode.microbit.org/, plus Teachable Machine via Web Bluetooth
+- Light Python (hardware): MicroPython on the device (Thonny or the micro:bit Python Editor) plus short bridge scripts on the laptop (10–40 lines, provided and modified rather than written from scratch)
 
-**The three technical patterns used in the workshop** (full code in the accompanying technical guide):
-1. **Sensor to LLM bridge:** micro:bit streams telemetry over USB serial; a Python script (pyserial) forwards it to the Claude API and returns the response to the device's display. Used in "Give your sensor a voice."
-2. **Local Teachable Machine:** an image model trained in the browser, exported to Keras, and run locally with a webcam; predictions are sent to the micro:bit over serial to trigger physical reactions. Used as a project-day option.
-3. **Web Bluetooth, no code:** Teachable Machine connected to the micro:bit through browser-based blocks over Bluetooth. The fully no-code path.
+**The technical patterns used in the workshop** (full code in `dev/web_prototypes/` and the accompanying technical guide):
+1. **Browser sensor to Claude, direct:** p5.js reads the webcam/mouse/mic in-browser and calls Claude via a small server-side proxy, or directly from the browser with a personal API key (`anthropic-dangerous-direct-browser-access`). Used in "The world as data" and "Word-magnet haiku."
+2. **In-browser classifier to Claude:** ml5.js `featureExtractor` + `KNNClassifier` trains a live webcam classifier with no export step; class changes are sent to Claude for narration. Used in "Give your sensor a voice."
+3. **Optional — sensor to LLM bridge (hardware track):** micro:bit streams telemetry over USB serial; a Python script (pyserial) forwards it to the Claude API and returns the response to the device's display.
+4. **Optional — Web Bluetooth, no code (hardware track):** Teachable Machine connected to the micro:bit through browser-based blocks over Bluetooth.
 
-**Practical notes:** API access is provided through a shared workshop key; no participant needs a personal account. All installs (`pip install anthropic pyserial`, plus TensorFlow and OpenCV for pattern 2) are prepared in advance or available offline.
+**Practical notes:** API access is provided either through a shared workshop proxy or a personal, spend-capped key — no participant needs a production account either way. Hardware-track installs (`pip install anthropic pyserial`, plus TensorFlow and OpenCV for the local-Teachable-Machine pattern) are prepared in advance or available offline.
 
 ---
 
 ## Key Resources
+
+**Browser-based track (primary)**
+- p5.js: https://p5js.org/
+- p5.js Web Editor: https://editor.p5js.org/
+- ml5.js: https://ml5js.org/
+- Claude (Anthropic) API docs: https://platform.claude.com/
+- This course's prototypes: `dev/web_prototypes/` in the repository, or https://editor.p5js.org/spikol/collections/kKChPpmyf
 
 **Unplugged foundations**
 - CS Unplugged: https://www.csunplugged.org/en/ and classic activities: https://classic.csunplugged.org/activities/
 - AI Unplugged (Northwestern): https://sites.northwestern.edu/aiunplugged/
 - Teaching London Computing: https://teachinglondoncomputing.org/unplugged-computing/
 
-**Plugged tools for classrooms**
+**Hardware track (optional) and plugged tools for classrooms**
 - Teachable Machine: https://teachablemachine.withgoogle.com/
 - Machine Learning for Kids: https://machinelearningforkids.co.uk/
 - micro:bit AI: https://microbit.org/ai/ and CreateAI: https://microbit.org/get-started/user-guide/microbit-createai/

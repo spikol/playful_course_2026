@@ -67,7 +67,7 @@ No prior AI background is assumed. The aim is not to produce finished materials 
 **09:00–10:30 · Work**
 **"Is this AI?"** — A provocative CS Unplugged opener where teachers sort everyday objects and behaviours into AI / not AI, argue their case, and discover how slippery the concept really is. The first act of didactic transposition: what do we actually mean by this idea, and how would we explain it to someone who has never heard the term?
 
-**The world as data** — How microcontrollers experience reality through sensors: a hands-on "blind tasting" where devices identify mystery environments (dark cupboard? sunny windowsill? someone breathing nearby?). Participants experience sensing as a learner would, before asking how to make that experience teachable.
+**The world as data** — p5.js reads the laptop's own webcam in real time (brightness, colour, motion between frames) and streams it to Claude, which narrates what it thinks the room is like, in a persona teams pick themselves. Teams do a "blind tasting": guess what's happening in another team's room from the data stream alone. No flashing, no wiring — just the laptop already in front of them.
 
 **10:30–11:00 · Discuss**
 What counts as sensing? What counts as intelligence? Where did participants disagree, and why does that disagreement matter for teaching?
@@ -76,7 +76,7 @@ What counts as sensing? What counts as intelligence? Where did participants disa
 *Didactic transposition and AI literacy* — Conceptual introduction to the framework running through the whole workshop. How do we move from scholarly AI knowledge to something genuinely teachable? Research context from UCPH.
 
 **13:00–14:30 · Work**
-**Build your first sensing thing** — Plug in, wire up, make it blink: a low-stakes, high-delight first circuit with a sensor of your choice. Productive confusion is welcome; getting things wrong is part of the method.
+**Word-magnet haiku** — A fridge-magnet-style word bank on a p5.js canvas. Drag 5–7 words into a tray and Claude writes a haiku using (almost) only your selection — participants see their own constrained input transformed by the model, which sets up Day 2's "Art of the Prompt" a day early.
 
 **Teach a machine with sticky notes** — Participants physically label, sort, and vote on data points to train a paper classifier, then watch it fail in interesting ways. A deliberate transposition tool: stripping away technical scaffolding to expose the underlying idea in a form anyone can reason about.
 
@@ -100,7 +100,7 @@ What makes a good prompt? What does prompting have in common with asking a good 
 *Generative AI: how it works and why it fails* — Research-grounded introduction to large language models, their architecture at a conceptual level, and the specific failure modes (hallucination, bias, opacity) that teachers need to understand before bringing these tools into the classroom.
 
 **13:00–14:30 · Work**
-**Give your sensor a voice** — The centrepiece activity: pipe live sensor readings into an LLM and ask it to narrate, explain, or invent a story about what it is detecting. The physical and linguistic come together.
+**Give your sensor a voice** — Train a live webcam gesture or pose classifier directly in the browser (no export step, no round trip through the Teachable Machine website); each time the top class changes, Claude narrates what it's "seeing," in character. Same classifier → language model pipeline as the original activity, minus the micro:bit + Python serial bridge — everything runs in one browser tab.
 
 **The lying, confident machine** — A critical AI literacy activity exploring bias, hallucination, and opacity through deliberately broken or misleading LLM outputs. Participants confront what a responsible transposition of AI into the high school classroom must honestly include.
 
@@ -182,16 +182,23 @@ The workshop does not resolve the question of how to teach AI well. It tries to 
 
 ## Hardware and Programming
 
-**Hardware choice:** Micro:bit (browser-based MakeCode, built-in sensors, low floor, native AI tools at microbit.org/ai) or Arduino (flexible, needs Python or C++, higher ceiling). The workshop supports both; participants choose based on their school's resources.
+**Primary approach: browser-based, p5.js + Claude.** No flashing, no wiring, no serial bridge — the Day 1–2 hands-on activities above run entirely in a laptop browser. p5.js reads the webcam (or mouse/microphone) as a "sensor," ml5.js trains a live classifier in-browser, and Claude does the narrating, either through a small shared server-side proxy or a personal, spend-capped API key entered directly in the page.
 
-**Programming level:** No-code (MakeCode blocks), light Python (10–20 line scripts, API calls), or mixed tracks running in parallel. Participants self-select on Day 1.
+**Optional hardware track:** Micro:bit (browser-based MakeCode, built-in sensors, native AI tools at microbit.org/ai) remains available for groups who want a physical-sensor version of the activities, or for Day 3 project work. The micro:bit's processor can't run large models directly, so sensor data still bridges to an LLM via a Python serial script on a laptop; Edge Impulse can be used to flash small ML models directly onto the device.
 
-**Technical bridge for GenAI activities:** The micro:bit's processor cannot run large models directly. Sensor data is read via serial connection (pyserial) on a laptop, then passed to an LLM via API (Hugging Face Hub or similar). Edge Impulse can be used to train and flash small ML models directly onto the device.
+**Programming level:** The browser-based activities need zero programming from participants — drag, click, watch. A light-Python track remains available on the hardware path (10–20 line scripts, API calls) for participants who want to look under the hood or run the micro:bit option. Participants self-select on Day 1.
 
 ---
 
 ## Key Resources
 
+**Browser-based track (primary):**
+- p5.js: [p5js.org](https://p5js.org)
+- p5.js Web Editor: [editor.p5js.org](https://editor.p5js.org)
+- ml5.js: [ml5js.org](https://ml5js.org)
+- Claude (Anthropic) API docs: [platform.claude.com](https://platform.claude.com)
+
+**Hardware track (optional) and general AI literacy:**
 - CS Unplugged: [csunplugged.org](https://csunplugged.org)
 - AI Unplugged (Northwestern): [sites.northwestern.edu/aiunplugged](https://sites.northwestern.edu/aiunplugged)
 - Teachable Machine: [teachablemachine.withgoogle.com](https://teachablemachine.withgoogle.com)

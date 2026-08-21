@@ -7,6 +7,143 @@
   <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
   <meta name="description" content="Playful Programming and Artificial Intelligence — a 5-day workshop for high school teachers, University of Copenhagen.">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify@4/lib/themes/vue.css">
+  <style>
+    /* Dark-mode recolor of the vue.css base theme, laid out with a
+       simple top navbar only (no nested sidebar) — same navbar-only
+       structure as https://spikol.github.io/playful_facilitator/#/ */
+    :root {
+      --bg: #16181d;
+      --panel: #1f232b;
+      --ink: #f2f0e8;
+      --muted: #9aa0ab;
+      --accent: #ffd166;
+      --accent-2: #6ec6ff;
+      --line: #343943;
+      --theme-color: var(--accent-2);
+    }
+
+    html, body {
+      background: var(--bg) !important;
+      color: var(--ink);
+    }
+
+    body {
+      font-family: -apple-system, "Helvetica Neue", Arial, sans-serif;
+    }
+
+    .sidebar, .sidebar-toggle {
+      display: none !important;
+    }
+
+    .content {
+      left: 0 !important;
+      max-width: 860px;
+      margin: 0 auto;
+    }
+
+    .markdown-section {
+      padding: 0 20px;
+    }
+
+    .markdown-section {
+      color: var(--ink);
+    }
+
+    .markdown-section h1,
+    .markdown-section h2,
+    .markdown-section h3,
+    .markdown-section h4,
+    .markdown-section strong {
+      color: var(--ink);
+    }
+
+    .markdown-section p,
+    .markdown-section li {
+      color: var(--ink);
+    }
+
+    .markdown-section em {
+      color: var(--muted);
+    }
+
+    .markdown-section a {
+      color: var(--accent-2);
+    }
+
+    .markdown-section hr {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .markdown-section code {
+      background: var(--panel);
+      color: var(--accent);
+    }
+
+    .markdown-section pre {
+      background: var(--panel) !important;
+    }
+
+    .markdown-section table tr {
+      background: var(--bg);
+      border-top: 1px solid var(--line);
+    }
+
+    .markdown-section table tr:nth-child(2n) {
+      background: var(--panel);
+    }
+
+    .markdown-section table th,
+    .markdown-section table td {
+      border: 1px solid var(--line);
+    }
+
+    .app-nav {
+      background: var(--bg);
+      margin: 0;
+      padding: 20px;
+    }
+
+    .app-nav li,
+    .app-nav a {
+      color: var(--ink);
+    }
+
+    .app-nav a:hover,
+    .app-nav li.active a {
+      color: var(--accent-2);
+    }
+
+    .app-name-link {
+      color: var(--ink) !important;
+    }
+
+    .search input {
+      background: var(--panel);
+      color: var(--ink);
+      border-color: var(--line);
+    }
+
+    .search .results-panel {
+      background: var(--panel);
+      color: var(--ink);
+    }
+
+    .search .matching-post {
+      border-bottom: 1px solid var(--line);
+    }
+
+    .search a {
+      color: var(--ink);
+    }
+
+    .search h2 {
+      color: var(--accent-2);
+    }
+
+    .search p {
+      color: var(--muted);
+    }
+  </style>
 </head>
 <body>
   <div id="app"></div>
@@ -15,13 +152,12 @@
       name: 'Playful Programming and Artificial Intelligence',
       repo: 'spikol/playful_course_2026',
       homepage: 'Didactic_Workshop_IOT_details.md',
-      loadSidebar: true,
+      loadSidebar: false,
       loadNavbar: true,
-      subMaxLevel: 3,
+      subMaxLevel: 0,
       auto2top: true,
       noCompileLinks: ['.*\\.pdf', '.*\\.zip'],
       alias: {
-        '/.*/_sidebar.md': '/_sidebar.md',
         '/.*/_navbar.md': '/_navbar.md'
       },
       search: {
