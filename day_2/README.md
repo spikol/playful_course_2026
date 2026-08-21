@@ -5,8 +5,7 @@ See the [full programme](/Didactic_Workshop_IOT_details.md#day-2--talking-to-the
 
 ## Seminar slides
 
-- [Generative AI: how it works and why it fails](/content/activities/Seminar_2_Generative_AI_how_it_works_and_why_it_fails.md)
-- [Slides (PDF)](https://spikol.github.io/playful_course_2026/day_2/Seminar_2_Generative_AI_how_it_works_and_why_it_fails.pdf)
+- [Generative AI: how it works and why it fails (PDF)](https://spikol.github.io/playful_course_2026/day_2/Seminar_2_Generative_AI_how_it_works_and_why_it_fails.pdf)
 
 ## Related activities
 
