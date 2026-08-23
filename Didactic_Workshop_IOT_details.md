@@ -5,6 +5,8 @@
 
 23-08-26
 
+<img src="images/happy_cyborgs_moon.png" alt="happy_cyborgs_moon 75%" style="zoom:50%;" />
+
 **University of Copenhagen · Centre for Digital Education**
 24–27 August 2026 + 5–6 October 2026
 
@@ -208,3 +210,4 @@ The workshop does not resolve the question of how to teach AI well. It tries to 
 - Edge Impulse: [edgeimpulse.com](https://edgeimpulse.com)
 - Make AI Robots: [makeairobots.com](https://makeairobots.com)
 - Elements of AI: [elementsofai.org](https://elementsofai.org)
+
