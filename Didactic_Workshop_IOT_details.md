@@ -3,7 +3,7 @@
 
 ### A 5-Day Workshop for High School Teachers
 
-170826
+23-08-26
 
 **University of Copenhagen · Centre for Digital Education**
 24–27 August 2026 + 5–6 October 2026
