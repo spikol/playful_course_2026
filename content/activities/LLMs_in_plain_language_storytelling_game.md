@@ -8,7 +8,7 @@
 
 A whole-group word game that carries the core mechanics of a large language model: next-token prediction, probability distributions, sampling temperature, and why hallucination is the mechanism working as designed rather than a malfunction. Participants become the model. No screens until the final five minutes.
 
-**[Printable game sheet (PDF)](llm_story.pdf)**
+**[Printable game sheet (PDF)](https://spikol.github.io/playful_course_2026/content/activities/llm_story.pdf)**
 
 ## Learning goals
 

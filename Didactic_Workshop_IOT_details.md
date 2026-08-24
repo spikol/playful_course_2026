@@ -25,7 +25,7 @@ The August block covers sensing, classification, and generative AI over two and 
 
 No prior AI background is assumed. The aim is not to produce finished materials but to develop a set of ideas, questions, and practical approaches that participants can keep working with after the course ends.
 
-**[Course Overview & Intended Learning Outcomes (PDF)](Course_Overview_and_Learning_Outcomes.pdf)** — a one-slide-deck summary of the above.
+**[Course Overview & Intended Learning Outcomes (PDF)](https://spikol.github.io/playful_course_2026/Course_Overview_and_Learning_Outcomes.pdf)** — a one-slide-deck summary of the above.
 
 ---
 

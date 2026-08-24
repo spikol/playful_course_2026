@@ -10,7 +10,7 @@ A creative prompting challenge. Everyone receives the same task and the same sta
 
 Runs immediately after the storytelling game, and depends on it: participants now know the machine is predicting plausible continuations, which is exactly why the framing of the prompt matters so much.
 
-**[Printable facilitation card (PDF)](prompt_art.pdf)**
+**[Printable facilitation card (PDF)](https://spikol.github.io/playful_course_2026/content/activities/prompt_art.pdf)**
 
 ## Learning goals
 

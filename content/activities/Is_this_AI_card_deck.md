@@ -3,7 +3,7 @@
 
 36 cards, designed so that sorting generates maximum argument. Roughly a third lean "yes", a third lean "no", and a third are deliberately unstable. Groups sort into three piles: **AI / not AI / it depends**, then defend their sorting to another group.
 
-**[Printable card deck (PDF)](is_it_ai_cards.pdf)**
+**[Printable card deck (PDF)](https://spikol.github.io/playful_course_2026/content/activities/is_it_ai_cards.pdf)**
 
 ---
 

@@ -13,7 +13,7 @@ paginate: true
 *Everything you have done for two days was someone's design.*
 *Today you are the designer.*
 
-**[Design canvas (PDF)](a5_Design_canvas.pdf)** — one per group
+**[Design canvas (PDF)](https://spikol.github.io/playful_course_2026/content/activities/a5_Design_canvas.pdf)** — one per group
 
 ---
 
