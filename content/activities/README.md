@@ -3,6 +3,7 @@
 Teaching guides, briefings, and slide decks for the workshop, organised by when they're used. Use the top navigation to browse by day, or jump straight to an activity below.
 
 - [Detailed Programme](Didactic_Workshop_IOT.md) — full day-by-day breakdown of the workshop, with facilitation notes and technical setup
+- [Kickoff — Seeing This Workshop Through the AI Fluency Framework](Kickoff_AI_Fluency_Framework.md) — Day 1 opener
 - ["Is this AI?" Card Deck](Is_this_AI_card_deck.md) — Day 1 opener
 - [Teach a Machine with Sticky Notes](Teach_a_machine_with_sticky_notes.md) — Day 1 afternoon
 - [LLMs in Plain Language: The Storytelling Game](LLMs_in_plain_language_storytelling_game.md) — Day 2 morning

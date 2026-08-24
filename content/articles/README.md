@@ -4,6 +4,8 @@ Background reading on didactic transposition and AI literacy that informs the wo
 
 - [Achiam, M. (2014). *Didactic transposition: From theoretical notion to research programme* \[Paper presentation\]. Biannual ESERA (European Science Education Research Association) Doctoral Summer School, Kappadokya, Turkey.](https://spikol.github.io/playful_course_2026/content/articles/Didactic_Transposition_From_theoretical.pdf)
 
+- [Dakan, R., & Feller, J. (2025). *Framework for AI fluency: Practical overview document* (Version 1.1).](https://spikol.github.io/playful_course_2026/content/articles/Framework_for_AI_Fluency_V_1.5.pdf) Ringling College of Art and Design & Cork University Business School, University College Cork. CC BY-NC-ND 4.0. — theoretical basis for the [workshop kickoff](/content/activities/Kickoff_AI_Fluency_Framework.md)
+
 - [Ben-Zvi, D. (2020). Data handling and statistics teaching and learning. In S. Lerman (Ed.), *Encyclopedia of mathematics education*. Springer. https://doi.org/10.1007/978-3-030-15789-0_48](https://spikol.github.io/playful_course_2026/content/articles/978-3-030-15789-0_48.pdf)
 
 - [Chevallard, Y. (1987). *A theoretical approach to curricula* \[Paper presentation\]. International Seminar on Comparative Studies of Mathematical Curricula in Different Countries, Frascati, Italy.](https://spikol.github.io/playful_course_2026/content/articles/A_Theoretical_Approach_to_Curricula.pdf)

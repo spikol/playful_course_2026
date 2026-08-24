@@ -9,5 +9,6 @@ See the [full programme](/Didactic_Workshop_IOT_details.md#day-1--waking-up-the-
 
 ## Related activities
 
+- [Kickoff — Seeing This Workshop Through the AI Fluency Framework](/content/activities/Kickoff_AI_Fluency_Framework.md)
 - ["Is this AI?" Card Deck](/content/activities/Is_this_AI_card_deck.md)
 - [Teach a Machine with Sticky Notes](/content/activities/Teach_a_machine_with_sticky_notes.md)
