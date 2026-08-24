@@ -16,6 +16,8 @@ By the end, participants can:
 - Recognise overfitting from direct experience: a classifier that memorises its training pile and stumbles on new cases
 - Identify how feature choice (which questions you are allowed to ask) shapes what a classifier can and cannot see
 
+**[Table worksheet (PDF)](train_a4_instructs.pdf)**
+
 ## Materials
 
 Per table of 4–6 participants:
@@ -29,10 +31,10 @@ Per table of 4–6 participants:
 
 Any set of items that can be classified into two or three categories works. Good options:
 
-- **Animal cards** (classify: mammal / not mammal, or pet / wild). Easy entry, familiar features.
-- **Mushroom cards** (edible / poisonous, invented data). High stakes make the testing phase dramatic.
-- **Short text snippets** (spam / not spam, or formal / informal). Closest to real NLP classification and best for language-subject teachers.
-- **Weather data rows** (play outside / stay in). Closest to sensor data and connects forward to the IoT activities.
+- **Animal cards** (classify: mammal / not mammal, or pet / wild). Easy entry, familiar features. [Printable set (PDF)](animals_training.pdf)
+- **Mushroom cards** (edible / poisonous, invented data). High stakes make the testing phase dramatic. [Printable set (PDF)](mushrooms_training.pdf)
+- **Short text snippets** (spam / not spam, or formal / informal). Closest to real NLP classification and best for language-subject teachers. [Printable set (PDF)](textsnips_training.pdf)
+- **Weather data rows** (play outside / stay in). Closest to sensor data and connects forward to the IoT activities. [Printable set (PDF)](weather_training.pdf)
 
 Prepare the test set deliberately: include at least two ambiguous cases, one case that contradicts a pattern in the training set, and one case with a missing feature. The failures these produce are the point of the activity.
 

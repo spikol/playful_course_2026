@@ -13,6 +13,8 @@ paginate: true
 *Everything you have done for two days was someone's design.*
 *Today you are the designer.*
 
+**[Design canvas (PDF)](a5_Design_canvas.pdf)** — one per group
+
 ---
 
 ## The brief

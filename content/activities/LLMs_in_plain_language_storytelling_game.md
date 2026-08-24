@@ -8,6 +8,8 @@
 
 A whole-group word game that carries the core mechanics of a large language model: next-token prediction, probability distributions, sampling temperature, and why hallucination is the mechanism working as designed rather than a malfunction. Participants become the model. No screens until the final five minutes.
 
+**[Printable game sheet (PDF)](llm_story.pdf)**
+
 ## Learning goals
 
 By the end, participants can:
