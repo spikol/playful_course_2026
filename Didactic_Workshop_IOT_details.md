@@ -199,7 +199,7 @@ The workshop does not resolve the question of how to teach AI well. It tries to 
 #### p5.js view samples
 [Word-Magnet](https://editor.p5js.org/spikol/full/Ieencj3kH)
 
-[Webcam-sensor](https://editor.p5js.org/spikol/full/Ieencj3kH)
+[Webcam-sensor](https://editor.p5js.org/spikol/full/PZv1AgE79)
 
 [Teachable_classifier_vid](https://editor.p5js.org/spikol/full/2KQ6Z9yU6)
 
