@@ -5,6 +5,7 @@ See the [full programme](/Didactic_Workshop_IOT_details.md#day-1--waking-up-the-
 
 ## Seminar slides
 
+- [Kickoff — Seeing This Workshop Through the AI Fluency Framework (PDF)](https://spikol.github.io/playful_course_2026/day_1/Kickoff_AI_Fluency_Framework.pdf)
 - [Didactic transposition and AI literacy (PDF)](https://spikol.github.io/playful_course_2026/day_1/Seminar_1_Didactic_transposition_and_AI_literacy.pdf)
 
 ## Related activities

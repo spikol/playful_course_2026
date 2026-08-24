@@ -4,6 +4,7 @@ Notable changes to the course site, most recent first.
 
 ## 2026-08-24
 - Added the Kickoff deck — "Seeing This Workshop Through the AI Fluency Framework" — and its source article to Activities and Articles
+- Linked the Kickoff deck's PDF slides from Day 1
 
 ## 2026-08-23
 - Added course artwork (`images/`) and a header image to the workshop details page
