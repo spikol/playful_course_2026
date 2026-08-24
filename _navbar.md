@@ -6,3 +6,4 @@
 * [Day 5](/day_5/)
 * [Activities](/content/activities/)
 * [Articles](/content/articles/)
+* [Changelog](/CHANGELOG.md)
