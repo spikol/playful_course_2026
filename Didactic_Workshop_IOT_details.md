@@ -203,6 +203,8 @@ The workshop does not resolve the question of how to teach AI well. It tries to 
 
 [Teachable_classifier_vid](https://editor.p5js.org/spikol/full/2KQ6Z9yU6)
 
+[The Confident Liar](https://editor.p5js.org/spikol/full/cwWborjH7)
+
 **Browser-based track (primary):**
 - p5.js: [p5js.org](https://p5js.org)
 - p5.js Web Editor: [editor.p5js.org](https://editor.p5js.org)
