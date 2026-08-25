@@ -184,10 +184,11 @@ Claims you can teach that stay true at every depth:
 - "It has read enormous amounts of text, unevenly" ✓
 - "It cannot check facts; it can only sound checked" ✓
 - "Confidence and correctness are independent" ✓
+- "It can read/query the internet for information" ✓
 
 Claims that will need unlearning later:
 
-- "It looks things up" ✗ · "It understands you" ✗ · "It knows when it's unsure" ✗
+- "It knows what is fact" ✗ · "It understands you" ✗ · "It knows when it's unsure" ✗
 
 ---
 

@@ -14,6 +14,10 @@ Teaching guides, briefings, and slide decks for the workshop, organised by when 
 - [Seminar 1 — Didactic transposition and AI literacy](Seminar_1_Didactic_transposition_and_AI_literacy.md)
 - [Seminar 2 — Generative AI: how it works and why it fails](Seminar_2_Generative_AI_how_it_works_and_why_it_fails.md)
 - [Seminar 3 — From one-off activity to teaching sequence](Seminar_3_From_one_off_activity_to_teaching_sequence.md)
-- [Sprint briefing — Classroom activity design sprint](Sprint_briefing_Classroom_activity_design_sprint.md)
+- [Sprint briefing — Classroom activity design sprint](Sprint_briefing_Classroom_activity_design_sprint.md) — Day 3
+- [Designing Playful AI Activities](Designing_activities_design_thinking.md) — Day 3, a design thinking lens for the sprint
+- [Designing at the Speed of Vibes](Vibe_coding_and_design_thinking_4D.md) — Day 3, vibe coding × the 4D framework
+- [Coding Without Feeling Like a Coder](Vibe_coding_for_beginners.md) — Day 3, vibe coding for beginners
+- [4D + Vibing Cheat Sheet](4D_and_Vibing_Cheatsheet.md) — Day 3, one-page reference
 
 Downloadable activity packs live in [zips/](https://github.com/spikol/playful_course_2026/tree/main/content/activities/zips).

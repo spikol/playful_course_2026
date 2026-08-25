@@ -3,6 +3,9 @@
 Notable changes to the course site, most recent first.
 
 ## 2026-08-25
+- Added three Day 3 decks — "Designing Playful AI Activities" (IDEO design thinking), "Designing at the Speed of Vibes" (vibe coding × 4D framework), "Coding Without Feeling Like a Coder" (vibe coding for beginners) — and a 4D + Vibing cheat sheet
+- Fixed Marp deck background images to use absolute URLs (same docsify bug as the PDF links)
+- Refreshed Seminar 2 (honest-claims correction)
 - Added a Padlet link to the navbar and homepage
 - Added "The Lying, Confident Machine" teaching guide and slide deck to Activities and Day 2
 - Updated the Seminar 2 deck (title slide background, revised framing)
