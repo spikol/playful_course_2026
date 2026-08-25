@@ -1,4 +1,5 @@
 * [Home](/)
+* [Padlet](https://padlet.com/ds341/playful-ai-and-programming-wd600grcsznigdb3)
 * [Day 1](/day_1/)
 * [Day 2](/day_2/)
 * [Day 3](/day_3/)

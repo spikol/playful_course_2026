@@ -3,6 +3,8 @@
 
 ### A 5-Day Workshop for High School Teachers
 
+**[Course Padlet](https://padlet.com/ds341/playful-ai-and-programming-wd600grcsznigdb3)** — the shared board for this workshop
+
 23-08-26
 
 <img src="images/happy_cyborgs_moon.png" alt="happy_cyborgs_moon 75%" style="zoom:50%;" />
