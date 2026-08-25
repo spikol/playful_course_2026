@@ -106,7 +106,7 @@ What makes a good prompt? What does prompting have in common with asking a good 
 *Generative AI: how it works and why it fails* — Research-grounded introduction to large language models, their architecture at a conceptual level, and the specific failure modes (hallucination, bias, opacity) that teachers need to understand before bringing these tools into the classroom.
 
 **13:00–14:30 · Work**
-**Give your sensor a voice** — Train a live webcam gesture or pose classifier directly in the browser (no export step, no round trip through the Teachable Machine website); each time the top class changes, Claude narrates what it's "seeing," in character. Same classifier → language model pipeline as the original activity, minus the micro:bit + Python serial bridge — everything runs in one browser tab.
+**Give your sensor a voice** — Train a live webcam gesture or pose classifier directly in the browser (no export step, no round trip through the Teachable Machine website); each time the top class changes, Claude narrates what it's "seeing," in character. Classifier → language model pipeline as the original activity everything runs in one browser tab.
 
 **The lying, confident machine** — A critical AI literacy activity exploring bias, hallucination, and opacity through deliberately broken or misleading LLM outputs. Participants confront what a responsible transposition of AI into the high school classroom must honestly include.
 
@@ -119,7 +119,7 @@ What would you actually show your students? What would you hide, warn about, or 
 **Wednesday 26 or Thursday 27 of August**
 
 **09:00–10:30 · Work**
-**Classroom activity design sprint** — In small groups, participants apply didactic transposition directly: taking something they have learned across the first two days and rebuilding it into a playful IoT + GenAI activity for their own students. Constraints: it must be cheap, safe to fail, and genuinely fun.
+**Classroom activity design sprint** — In small groups, participants apply didactic transposition directly: taking something they have learned across the first two days and rebuilding it into a playful GenAI activity for their own students. Constraints: it must be cheap, safe to fail, and genuinely fun.
 
 **10:30–11:00 · Discuss**
 Progress check: what are groups building, where are they stuck, what do they need?
