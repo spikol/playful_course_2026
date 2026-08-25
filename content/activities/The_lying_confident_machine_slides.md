@@ -3,7 +3,7 @@ marp: true
 theme: gaia
 paginate: true
 ---
-![bg](../../images/clone.png)
+![bg](https://spikol.github.io/playful_course_2026/images/clone.png)
 
 ---
 

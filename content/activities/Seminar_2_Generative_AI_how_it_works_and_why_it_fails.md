@@ -4,7 +4,7 @@ theme: gaia
 paginate: true
 ---
 
-![bg](../../images/exosuits.png)
+![bg](https://spikol.github.io/playful_course_2026/images/exosuits.png)
 
 ---
 <!-- _class: lead -->

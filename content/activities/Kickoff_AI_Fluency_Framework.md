@@ -3,7 +3,7 @@ marp: true
 theme: gaia
 paginate: true
 ---
-![bg](../../images/army_of_happy_cyborgs.png)
+![bg](https://spikol.github.io/playful_course_2026/images/army_of_happy_cyborgs.png)
 
 ---
 

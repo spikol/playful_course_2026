@@ -3,7 +3,7 @@ marp: true
 theme: gaia
 paginate: true
 ---
-![bg right](../../images/oscar_wilde.png)
+![bg right](https://spikol.github.io/playful_course_2026/images/oscar_wilde.png)
 
 ## “I can resist anything except temptation”
 
