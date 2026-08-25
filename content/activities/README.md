@@ -9,6 +9,8 @@ Teaching guides, briefings, and slide decks for the workshop, organised by when 
 - [Teach a Machine with Sticky Notes](Teach_a_machine_with_sticky_notes.md) — Day 1 afternoon
 - [LLMs in Plain Language: The Storytelling Game](LLMs_in_plain_language_storytelling_game.md) — Day 2 morning
 - [The Art of the Prompt](The_art_of_the_prompt.md) — Day 2 morning
+- [The Lying, Confident Machine](The_lying_confident_machine.md) — Day 2 afternoon
+- [The Lying, Confident Machine — slides](The_lying_confident_machine_slides.md) — Day 2 afternoon
 - [Seminar 1 — Didactic transposition and AI literacy](Seminar_1_Didactic_transposition_and_AI_literacy.md)
 - [Seminar 2 — Generative AI: how it works and why it fails](Seminar_2_Generative_AI_how_it_works_and_why_it_fails.md)
 - [Seminar 3 — From one-off activity to teaching sequence](Seminar_3_From_one_off_activity_to_teaching_sequence.md)

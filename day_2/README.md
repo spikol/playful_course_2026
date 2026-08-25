@@ -11,3 +11,4 @@ See the [full programme](/Didactic_Workshop_IOT_details.md#day-2--talking-to-the
 
 - [LLMs in Plain Language: The Storytelling Game](/content/activities/LLMs_in_plain_language_storytelling_game.md)
 - [The Art of the Prompt](/content/activities/The_art_of_the_prompt.md)
+- [The Lying, Confident Machine](/content/activities/The_lying_confident_machine.md) ([slides](/content/activities/The_lying_confident_machine_slides.md))

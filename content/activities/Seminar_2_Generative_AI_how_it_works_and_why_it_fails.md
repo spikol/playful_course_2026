@@ -4,13 +4,16 @@ theme: gaia
 paginate: true
 ---
 
+![bg](../../images/exosuits.png)
+
+---
 <!-- _class: lead -->
 
 # Generative AI: How It Works and Why It Fails
 
 ### Seminar 2 · Playful Programming and Artificial Intelligence
 
-University of Copenhagen · Department of Computer Science
+Daniel Spikol
 
 ---
 
@@ -190,7 +193,7 @@ Claims that will need unlearning later:
 
 ## This afternoon
 
-You give a micro:bit's sensor data to a language model and ask it to narrate.
+You give a sensor data to a language model and ask it to narrate.
 
 Then you make it fail — on purpose, with a misleading system prompt.
 

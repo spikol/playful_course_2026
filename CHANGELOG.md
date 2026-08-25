@@ -2,6 +2,10 @@
 
 Notable changes to the course site, most recent first.
 
+## 2026-08-25
+- Added "The Lying, Confident Machine" teaching guide and slide deck to Activities and Day 2
+- Updated the Seminar 2 deck (title slide background, revised framing)
+
 ## 2026-08-24
 - Added printable PDF materials (card decks, worksheets, design canvas) to the 5 activity guides that were missing them
 - Added a Course Overview & Intended Learning Outcomes deck, linked from the homepage and Activities
