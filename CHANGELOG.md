@@ -3,6 +3,7 @@
 Notable changes to the course site, most recent first.
 
 ## 2026-08-25
+- Added a Padlet link to the navbar and homepage
 - Added "The Lying, Confident Machine" teaching guide and slide deck to Activities and Day 2
 - Updated the Seminar 2 deck (title slide background, revised framing)
 
