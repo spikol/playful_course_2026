@@ -19,3 +19,4 @@ See the [full programme](/Didactic_Workshop_IOT_details.md#day-3--your-turn-desi
 - [Designing at the Speed of Vibes](/content/activities/Vibe_coding_and_design_thinking_4D.md)
 - [Coding Without Feeling Like a Coder](/content/activities/Vibe_coding_for_beginners.md)
 - [4D + Vibing Cheat Sheet](/content/activities/4D_and_Vibing_Cheatsheet.md)
+- [Final Project — The Playful AI Cookbook (assignment brief)](/content/activities/Final_Project_The_Playful_AI_Cookbook.md)

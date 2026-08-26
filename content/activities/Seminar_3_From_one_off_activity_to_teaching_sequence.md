@@ -52,7 +52,11 @@ Each encounter strips a simplification from the last —
 transposition, staged over time.
 
 ---
-
+<style scoped>
+table {
+  font-size: 25px;
+}
+</style>
 ## You already know one sequence: this workshop
 
 | Encounter | Form | What was removed |
@@ -60,7 +64,7 @@ transposition, staged over time.
 | "Is this AI?" | argument | nothing — pure intuition |
 | Sticky-note trees | paper model | vagueness: now there's a mechanism |
 | Storytelling game | embodied model | determinism: now there's probability |
-| Sensor + LLM bridge | real system | pretence: now it's the actual thing |
+| Sensors + LLM bridge | real system | pretence: now it's the actual thing |
 | Lying, confident machine | critique | trust: now you interrogate it |
 
 **Day 1 to Day 2 was a designed sequence.** Steal the structure, not the activities.
@@ -95,7 +99,7 @@ Test your driving question against three criteria:
 3. **It belongs to the students** — situated in their room, their language, their data
 
 *"What is machine learning?"* fails all three.
-*"Can the micro:bit tell when our class is bored?"* passes all three — and smuggles in ethics without announcing it.
+*"Can the AI tell when our class is bored?"* passes all three — and smuggles in ethics without announcing it.
 
 ---
 <style scoped>
@@ -113,29 +117,4 @@ You do not control the timetable. Sequences that survive contact with a Danish g
 - **The cross-subject relay** — the same question passes from biology (the data) to Danish (the language of the output) to samfundsfag (who is accountable)
 - **The October move** — end the sequence by having students redesign the first activity for a younger class. Transposition as assessment.
 
----
-
-## What this means for your canvas — right now
-
-After lunch, add one row to your design:
-
-**"Encounter 2: ___"**
-
-One sentence. Where does your activity go *next* —
-what simplification does the second encounter remove?
-
-You do not need a full sequence today.
-You need a **direction** — proof your activity is a first encounter, not a dead end.
-
----
-
-<!-- _class: lead -->
-
-## One line to keep
-
-An activity is a good *first* encounter
-when it leaves a question that
-the *second* encounter is needed to answer.
-
-**Back to the canvas at 13:00.**
 

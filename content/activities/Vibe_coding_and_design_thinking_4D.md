@@ -3,7 +3,7 @@ marp: true
 theme: gaia
 paginate: true
 ---
-![bg](https://spikol.github.io/playful_course_2026/images/exosuits.png)
+![bg](https://spikol.github.io/playful_course_2026/images/glow_me.png)
 
 ---
 
@@ -13,7 +13,7 @@ paginate: true
 
 ### Where design thinking meets vibe coding, through the 4D AI Fluency Framework
 
-*Playful Programming and Artificial Intelligence · University of Copenhagen*
+*Playful Programming and Algorithhmic Intelligence*
 
 ---
 

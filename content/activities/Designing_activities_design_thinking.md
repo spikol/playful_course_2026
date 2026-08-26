@@ -114,7 +114,11 @@ An activity that teaches one thing well beats one that gestures at everything.
 # 4 · Generate ideas
 
 ---
-
+<style scoped>
+li {
+  font-size: 25px;
+}
+</style>
 ## Go wide before you fall in love
 
 Twelve minutes. Aim for **eight rough ideas**, not one good one.

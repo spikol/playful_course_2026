@@ -3,6 +3,7 @@
 Teaching guides, briefings, and slide decks for the workshop, organised by when they're used. Use the top navigation to browse by day, or jump straight to an activity below.
 
 - [Detailed Programme](Didactic_Workshop_IOT.md) — full day-by-day breakdown of the workshop, with facilitation notes and technical setup
+- [Final Project — The Playful AI Cookbook](Final_Project_The_Playful_AI_Cookbook.md) — assignment brief, drafted end of August, shared in October
 - [Course Overview & Intended Learning Outcomes](Course_Overview_and_Learning_Outcomes.md) — whole-course summary deck
 - [Kickoff — Seeing This Workshop Through the AI Fluency Framework](Kickoff_AI_Fluency_Framework.md) — Day 1 opener
 - ["Is this AI?" Card Deck](Is_this_AI_card_deck.md) — Day 1 opener

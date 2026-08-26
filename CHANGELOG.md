@@ -2,6 +2,10 @@
 
 Notable changes to the course site, most recent first.
 
+## 2026-08-26
+- Added the Final Project assignment brief — "The Playful AI Cookbook" — linked from Day 3, Day 5, and Activities
+- Refreshed Seminar 3, "Designing Playful AI Activities," and "Designing at the Speed of Vibes" (styling and wording fixes)
+
 ## 2026-08-25
 - Added three Day 3 decks — "Designing Playful AI Activities" (IDEO design thinking), "Designing at the Speed of Vibes" (vibe coding × 4D framework), "Coding Without Feeling Like a Coder" (vibe coding for beginners) — and a 4D + Vibing cheat sheet
 - Fixed Marp deck background images to use absolute URLs (same docsify bug as the PDF links)
