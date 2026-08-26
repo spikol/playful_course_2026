@@ -70,70 +70,15 @@ No prior AI background is assumed. The aim is not to produce finished materials 
 ### Day 1 — Waking Up the Machine: From Ideas to Connected Things
 **Monday 24 August**
 
-**09:00–10:30 · Work**
-**"Is this AI?"** — A provocative CS Unplugged opener where teachers sort everyday objects and behaviours into AI / not AI, argue their case, and discover how slippery the concept really is. The first act of didactic transposition: what do we actually mean by this idea, and how would we explain it to someone who has never heard the term?
-
-**The world as data** — p5.js reads the laptop's own webcam in real time (brightness, colour, motion between frames) and streams it to Claude, which narrates what it thinks the room is like, in a persona teams pick themselves. Teams do a "blind tasting": guess what's happening in another team's room from the data stream alone. No flashing, no wiring — just the laptop already in front of them.
-
-**10:30–11:00 · Discuss**
-What counts as sensing? What counts as intelligence? Where did participants disagree, and why does that disagreement matter for teaching?
-
-**11:00–12:00 · Seminar**
-*Didactic transposition and AI literacy* — Conceptual introduction to the framework running through the whole workshop. How do we move from scholarly AI knowledge to something genuinely teachable? Research context from UCPH.
-
-**13:00–14:30 · Work**
-**Word-magnet haiku** — A fridge-magnet-style word bank on a p5.js canvas. Drag 5–7 words into a tray and Claude writes a haiku using (almost) only your selection — participants see their own constrained input transformed by the model, which sets up Day 2's "Art of the Prompt" a day early.
-
-**Teach a machine with sticky notes** — Participants physically label, sort, and vote on data points to train a paper classifier, then watch it fail in interesting ways. A deliberate transposition tool: stripping away technical scaffolding to expose the underlying idea in a form anyone can reason about.
-
-**14:30–15:00 · Discuss**
-When does a thermostat become intelligent? A guided philosophical provocation using everyday objects to interrogate what "sensing", "deciding", and "learning" actually mean. Participants begin asking not only what AI is, but what has been simplified and what has been lost in translation.
-
 ---
 
 ### Day 2 — Talking to the Machine: Generative AI in the Wild
 **Tuesday 25 August**
 
-**09:00–10:30 · Work**
-**LLMs in plain language** — Tokens, probabilities, and hallucinations explained through a group storytelling game where participants predict the next word. Encountering the concept as a learner first, before asking how to teach it.
-
-**The art of the prompt** — A creative prompting challenge: who can get the most surprising, useful, or absurd response from the same starting sentence? Participants discover how much craft and creativity the right instruction requires.
-
-**10:30–11:00 · Discuss**
-What makes a good prompt? What does prompting have in common with asking a good research question or writing a clear exam task? Where does the analogy break down?
-
-**11:00–12:00 · Seminar**
-*Generative AI: how it works and why it fails* — Research-grounded introduction to large language models, their architecture at a conceptual level, and the specific failure modes (hallucination, bias, opacity) that teachers need to understand before bringing these tools into the classroom.
-
-**13:00–14:30 · Work**
-**Give your sensor a voice** — Train a live webcam gesture or pose classifier directly in the browser (no export step, no round trip through the Teachable Machine website); each time the top class changes, Claude narrates what it's "seeing," in character. Classifier → language model pipeline as the original activity everything runs in one browser tab.
-
-**The lying, confident machine** — A critical AI literacy activity exploring bias, hallucination, and opacity through deliberately broken or misleading LLM outputs. Participants confront what a responsible transposition of AI into the high school classroom must honestly include.
-
-**14:30–15:00 · Discuss**
-What would you actually show your students? What would you hide, warn about, or save for later? What does responsible AI literacy look like at gymnasium level?
-
 ---
 
 ### Day 3 — Your Turn: Design, Build, and Present (Slightly Shorter)
 **Wednesday 26 or Thursday 27 of August**
-
-**09:00–10:30 · Work**
-**Classroom activity design sprint** — In small groups, participants apply didactic transposition directly: taking something they have learned across the first two days and rebuilding it into a playful GenAI activity for their own students. Constraints: it must be cheap, safe to fail, and genuinely fun.
-
-**10:30–11:00 · Discuss**
-Progress check: what are groups building, where are they stuck, what do they need?
-
-**11:00–12:00 · Seminar**
-*From classroom activity to curriculum sequence* — How do one-off activities become sustained learning? Research perspectives on embedding computational thinking and AI literacy across STEM subjects, with examples from UCPH projects.
-
-**13:00–14:00 · Work**
-**Playtest and steal** — Groups swap activities, try each other's ideas, and give feedback as if they were the students. Testing whether the transposition actually works in practice.
-
-Final sprint: participants revise their activity based on feedback and prepare a short classroom-ready description.
-**What do we take into the interim period?** Each participant names: one activity they will try before October, one question they are still sitting with, and one thing they want to report back on.
-
-*August block closes. Before October, participants try at least one idea with their students and note what they observe.*
 
 ---
 
@@ -144,45 +89,10 @@ Final sprint: participants revise their activity based on feedback and prepare a
 ### Day 4 — Back from the Classroom: What Actually Happened?
 **Monday 5 October**
 
-**09:00–10:00 · Work**
-**Classroom experience reports** — Structured show-and-tell: each participant shares what they tried, what happened, and what surprised them. Failures are as welcome as successes.
-
-**10:15–11:00 · Discuss**
-Patterns across the group: what worked across different school contexts? What failed consistently? What do the failures tell us about the gap between workshop and classroom?
-
-**11:00–12:00 · Seminar**
-*AI in education: current research and open questions* — Updated perspectives from UCPH on where the field is moving, what teachers are reporting nationally and internationally, and how the classroom experiments from this group connect to larger trends.
-
-**13:00–14:30 · Work**
-**Activity revision sprint** — Participants rework their August activity in light of what they learned from trying it. New constraints: it must now be something a colleague with no workshop background could pick up and run.
-
-**14:30–15:00 · Discuss**
-What changed between August and now — in the activity, in your understanding, or in how you think about teaching AI?
-
 ---
 
 ### Day 5 — Consolidation: Refine, Share, and Publish
 **Tuesday 6 October**
-
-**09:00–10:30 · Work**
-**Final activity polish** — Participants complete their classroom-ready activity documentation: learning objectives, materials list, step-by-step facilitation notes, and at least one known failure mode with advice on handling it.
-
-**10:30–11:00 · Discuss**
-Peer-review round: participants read each other's documentation and provide one concrete suggestion for improvement.
-
-**11:00–12:00 · Seminar**
-*Critical AI literacy as a long-term project* — Closing research perspective: what does it mean to keep developing as a teacher of AI? What communities, resources, and practices support that? Where does this workshop fit in a longer arc?
-
-**13:00–14:30 · Work**
-**Share-out and collective resource** — Activities are gathered into a shared collection. Participants present their final version to the group in a three-minute format: what it is, what it teaches, and what to watch out for.
-
-**14:30–15:00 · Discuss**
-**Closing reflection.** Three prompts for every participant:
-- One thing that shifted — in understanding, or in how you think about teaching AI.
-- One thing you want to keep exploring.
-- One question you are taking with you.
-
-The workshop does not resolve the question of how to teach AI well. It tries to make that question more interesting, more concrete, and more worth pursuing.
 
 ---
 
@@ -197,6 +107,8 @@ The workshop does not resolve the question of how to teach AI well. It tries to 
 ---
 
 ## Key Resources
+
+**[Course Padlet](https://padlet.com/ds341/playful-ai-and-programming-wd600grcsznigdb3)** — the shared board for this workshop
 
 #### p5.js view samples
 [Word-Magnet](https://editor.p5js.org/spikol/full/Ieencj3kH)

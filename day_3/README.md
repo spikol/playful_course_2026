@@ -1,6 +1,23 @@
 # Day 3 — Your Turn: Design, Build, and Present
 **Wednesday 26 or Thursday 27 August**
 
+**09:00–10:30 · Work**
+**Classroom activity design sprint** — In small groups, participants apply didactic transposition directly: taking something they have learned across the first two days and rebuilding it into a playful GenAI activity for their own students. Constraints: it must be cheap, safe to fail, and genuinely fun.
+
+**10:30–11:00 · Discuss**
+Progress check: what are groups building, where are they stuck, what do they need?
+
+**11:00–12:00 · Seminar**
+*From classroom activity to curriculum sequence* — How do one-off activities become sustained learning? Research perspectives on embedding computational thinking and AI literacy across STEM subjects, with examples from UCPH projects.
+
+**13:00–14:00 · Work**
+**Playtest and steal** — Groups swap activities, try each other's ideas, and give feedback as if they were the students. Testing whether the transposition actually works in practice.
+
+Final sprint: participants revise their activity based on feedback and prepare a short classroom-ready description.
+**What do we take into the interim period?** Each participant names: one activity they will try before October, one question they are still sitting with, and one thing they want to report back on.
+
+*August block closes. Before October, participants try at least one idea with their students and note what they observe.*
+
 See the [full programme](/Didactic_Workshop_IOT_details.md#day-3--your-turn-design-build-and-present-slightly-shorter) for the daily agenda.
 
 ## Seminar slides
