@@ -3,6 +3,7 @@
 Notable changes to the course site, most recent first.
 
 ## 2026-08-26
+- Reorganized the Activities index into Slides / Activities / Links / PDFs only, surfacing 9 printable worksheets that had no entry point before
 - Moved each day's full agenda off the homepage and onto its own Day N page; the homepage now shows just titles, dates, and a link to the full programme anchor
 - Fixed the Activities index page: it was the one page still using bare-relative .md links, which docsify was resolving to 404s — converted to the leading-slash absolute form used everywhere else on the site
 - Added the Final Project assignment brief — "The Playful AI Cookbook" — linked from Day 3, Day 5, and Activities
