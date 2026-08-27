@@ -129,6 +129,6 @@ The dramatic version here is a teaching device, not a claim that failures always
 
 ## Try it yourself
 
-**[The Confident Liar](https://editor.p5js.org/spikol/full/cwWborjH7)** — the same webcam/mic sensor bridge as "Give your sensor a voice," but the system prompt and question are yours to edit, with a wall of lies built in.
+**[The Confident Liar](https://editor.p5js.org/spikol/full/cwWborjH7)** — a patch bay: wire real webcam/mic readings through fake EEG/HRV/EDA/respiration blocks, feed whatever you connect to Claude, and watch it write a confident clinical report from numbers that were never real. Wall of lies built in.
 
 Works as a 20-minute standalone activity with any chat interface too — no p5.js or sensors required.
