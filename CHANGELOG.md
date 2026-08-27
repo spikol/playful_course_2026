@@ -2,6 +2,10 @@
 
 Notable changes to the course site, most recent first.
 
+## 2026-08-27
+- Added a bonus reference PDF (4D framework as MAGIC mnemonic) to Activities
+- Made each homepage Day heading a link to its Day page
+
 ## 2026-08-26
 - Reorganized the Activities index into Slides / Activities / Links / PDFs only, surfacing 9 printable worksheets that had no entry point before
 - Moved each day's full agenda off the homepage and onto its own Day N page; the homepage now shows just titles, dates, and a link to the full programme anchor

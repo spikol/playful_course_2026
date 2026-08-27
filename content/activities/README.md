@@ -44,3 +44,4 @@ Printable materials with no separate guide page — worksheets and card sets use
 - [The Art of the Prompt — facilitation card](https://spikol.github.io/playful_course_2026/content/activities/prompt_art.pdf)
 - [LLMs Storytelling Game — game sheet](https://spikol.github.io/playful_course_2026/content/activities/llm_story.pdf)
 - [Classroom Activity Design Sprint — design canvas](https://spikol.github.io/playful_course_2026/content/activities/a5_Design_canvas.pdf)
+- [Bonus: the 4D framework as MAGIC](https://spikol.github.io/playful_course_2026/content/activities/AI_Fluency_HoD_Workshop_Bonus_MAGIC.pdf) — a more memorable mnemonic for the same framework, from a related workshop deck

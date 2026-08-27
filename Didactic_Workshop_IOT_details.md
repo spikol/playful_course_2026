@@ -67,17 +67,17 @@ No prior AI background is assumed. The aim is not to produce finished materials 
 
 ---
 
-### Day 1 — Waking Up the Machine: From Ideas to Connected Things
+### [Day 1 — Waking Up the Machine: From Ideas to Connected Things](/day_1/)
 **Monday 24 August**
 
 ---
 
-### Day 2 — Talking to the Machine: Generative AI in the Wild
+### [Day 2 — Talking to the Machine: Generative AI in the Wild](/day_2/)
 **Tuesday 25 August**
 
 ---
 
-### Day 3 — Your Turn: Design, Build, and Present (Slightly Shorter)
+### [Day 3 — Your Turn: Design, Build, and Present (Slightly Shorter)](/day_3/)
 **Wednesday 26 or Thursday 27 of August**
 
 ---
@@ -86,12 +86,12 @@ No prior AI background is assumed. The aim is not to produce finished materials 
 
 ---
 
-### Day 4 — Back from the Classroom: What Actually Happened?
+### [Day 4 — Back from the Classroom: What Actually Happened?](/day_4/)
 **Monday 5 October**
 
 ---
 
-### Day 5 — Consolidation: Refine, Share, and Publish
+### [Day 5 — Consolidation: Refine, Share, and Publish](/day_5/)
 **Tuesday 6 October**
 
 ---
