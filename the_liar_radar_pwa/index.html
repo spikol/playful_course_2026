@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>The Confident Liar — Radar</title>
+  <meta name="description" content="Point the camera, get a confident field report from a real sensor reading and an invented biosignal.">
+
+  <link rel="manifest" href="manifest.json">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="icon" href="icon-192.png">
+  <meta name="theme-color" content="#0c0e11">
+
+  <!-- iOS home-screen install behavior. display:standalone in the
+       manifest covers modern iOS too, but these tags are still what
+       Safari actually reads for the status-bar style and app title. -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Radar Liar">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&display=swap">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+
+    <!-- ---------- Capture ---------- -->
+    <section id="screen-capture" class="screen is-active">
+      <header class="topbar">
+        <div class="topbar-text">
+          <div class="eyebrow" id="capture-status-label">STANDBY</div>
+          <div class="title" id="capture-title">AWAITING LOCK</div>
+        </div>
+        <button id="gear-btn" class="icon-btn" aria-label="Settings">
+          <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><circle cx="9" cy="6" r="2"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="15" cy="12" r="2"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="9" cy="18" r="2"/></svg>
+        </button>
+      </header>
+
+      <div class="viewfinder" id="viewfinder">
+        <div class="hud-grid"></div>
+        <video id="cam-video" autoplay muted playsinline></video>
+        <div class="hud-lock-box" id="lock-box"></div>
+        <div class="hud-sweep" id="hud-sweep"></div>
+        <div class="hud-pill" id="hud-pill">
+          <span class="dot"></span>
+          <span id="hud-pill-text">STANDBY</span>
+        </div>
+        <div class="hud-hint" id="viewfinder-hint">tap below to arm the camera &amp; mic</div>
+      </div>
+
+      <div class="readout-row" id="readout-row" hidden>
+        <div class="readout">
+          <div class="readout-label">BRIGHT</div>
+          <div class="readout-val" id="val-brightness">&mdash;</div>
+        </div>
+        <div class="readout">
+          <div class="readout-label">MOTION</div>
+          <div class="readout-val" id="val-motion">&mdash;</div>
+        </div>
+        <div class="readout">
+          <div class="readout-label">MIC</div>
+          <div class="readout-val" id="val-mic">&mdash;</div>
+        </div>
+      </div>
+
+      <p id="capture-error" class="error-text" hidden></p>
+
+      <div class="bottom-bar">
+        <button id="primary-btn" class="btn btn-primary">GRANT ACCESS</button>
+      </div>
+    </section>
+
+    <!-- ---------- Result ---------- -->
+    <section id="screen-result" class="screen">
+      <header class="topbar">
+        <div class="topbar-text">
+          <div class="eyebrow">TRANSMISSION COMPLETE</div>
+          <div class="mode-badge" id="mode-badge">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="8.5" cy="8.5" r="1" fill="currentColor" stroke="none"/><circle cx="15.5" cy="15.5" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg>
+            <span id="mode-badge-text">RANDOM ASSIGN</span>
+          </div>
+          <div class="title" id="case-title">&mdash;</div>
+        </div>
+      </header>
+
+      <div class="lock-mini" id="lock-mini">
+        <div class="lock-mini-ring"></div>
+        <div class="lock-mini-core" id="lock-mini-core"></div>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal-bar">&gt; FIELD_REPORT.LOG</div>
+        <div class="terminal-body" id="report-text"></div>
+      </div>
+
+      <div class="signal-legend" id="signal-legend"></div>
+
+      <div class="bottom-bar bottom-bar-split">
+        <button id="new-scan-btn" class="btn btn-primary">NEW SCAN</button>
+        <button id="copy-btn" class="btn btn-ghost">COPY REPORT</button>
+      </div>
+    </section>
+
+    <!-- ---------- Settings ---------- -->
+    <div id="settings-backdrop" class="backdrop"></div>
+    <div id="settings-sheet" class="sheet" role="dialog" aria-label="Settings">
+      <div class="sheet-header">
+        <div class="title">SYSTEM CONFIG</div>
+        <button id="settings-close-btn" class="icon-btn" aria-label="Close">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        </button>
+      </div>
+
+      <div class="sheet-section-label">SCAN MODE</div>
+      <label class="mode-row">
+        <span class="mode-row-icon">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="4" width="16" height="16" rx="3"/><circle cx="8.5" cy="8.5" r="1" fill="currentColor" stroke="none"/><circle cx="15.5" cy="15.5" r="1" fill="currentColor" stroke="none"/><circle cx="12" cy="12" r="1" fill="currentColor" stroke="none"/></svg>
+        </span>
+        <span class="mode-row-text">Random assignment</span>
+        <input type="checkbox" id="random-toggle" checked>
+        <span class="switch"></span>
+      </label>
+
+      <div class="pin-hint" id="pin-hint">or pin a mode:</div>
+      <div class="case-pills" id="case-pills"></div>
+
+      <div class="sheet-section-label" style="margin-top:16px;">SENSOR STATUS</div>
+      <div class="sensor-row" id="sensor-row-camera">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="14" height="11" rx="2"/><path d="M17 10l4-2v9l-4-2"/><circle cx="10" cy="12.5" r="2.5"/></svg>
+        <span class="sensor-row-text">Camera</span>
+        <span class="sensor-status" id="status-camera">NOT REQUESTED</span>
+      </div>
+      <div class="sensor-row" id="sensor-row-mic">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="3" width="6" height="11" rx="3"/><path d="M5 11a7 7 0 0014 0"/></svg>
+        <span class="sensor-row-text">Microphone</span>
+        <span class="sensor-status" id="status-mic">NOT REQUESTED</span>
+      </div>
+      <p class="fineprint">Camera and mic can't be disabled from here once granted &mdash; that's the browser's call, not the page's. If either shows DENIED, re-enable it in iOS Settings &rarr; Safari &rarr; this site, then reload.</p>
+      <p class="fineprint">Motion, GPS, and network readings are design directions explored on the desktop mockups, not implemented in this test build.</p>
+
+      <button id="settings-done-btn" class="btn btn-primary" style="margin-top:14px;">DONE</button>
+    </div>
+
+  </div>
+
+  <script src="sketch.js"></script>
+</body>
+</html>
