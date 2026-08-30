@@ -5,7 +5,7 @@
 
 **[Course Padlet](https://padlet.com/ds341/playful-ai-and-programming-wd600grcsznigdb3)** — the shared board for this workshop
 
-23-08-26
+30-08-26
 
 <img src="images/happy_cyborgs_moon.png" alt="happy_cyborgs_moon 75%" style="zoom:50%;" />
 
@@ -37,11 +37,11 @@ No prior AI background is assumed. The aim is not to produce finished materials 
 |---|---|---|---|
 | August Day 1 | Mon 24 August | 9 to 15 | Physical AI: sensing, classification, unplugged |
 | August Day 2 | Tue 25 August | 9 to 15 | Generative AI: LLMs, prompting, sensor + language |
-| August Day 3A | Weds 26 August | 9 to 14 | Project: design, build, and present |
+| August Day 3A | Wed 26 August | 9 to 14 | Project: design, build, and present |
 | August Day 3B | Thu 27 August | 9 to 14 | Project: design, build, and present |
 |---|---|---|  |
-| October Day 4 | Mon 5 October | 9 to 15 | Classroom feedback: what happened, what changed |
-| October Day 5 | Tue 6 October | 9 to 15 | Consolidation: refine, share, and publish |
+| October Day 4 | Mon 5 October | 9 to 15 | Classroom feedback: what happened, what changed, group testing and work |
+| October Day 5 | Tue 6 October | 9 to 15 | Consolidation: refine, share, and publish the cook book |
 
 ---
 
@@ -98,11 +98,11 @@ No prior AI background is assumed. The aim is not to produce finished materials 
 
 ## Hardware and Programming
 
-**Primary approach: browser-based, p5.js + Claude.** No flashing, no wiring, no serial bridge — the Day 1–2 hands-on activities above run entirely in a laptop browser. p5.js reads the webcam (or mouse/microphone) as a "sensor," ml5.js trains a live classifier in-browser, and Claude does the narrating, either through a small shared server-side proxy or a personal, spend-capped API key entered directly in the page.
+**Primary approach: browser-based, p5.js + Claude.**  Day 1–2 hands-on activities above run entirely in a laptop browser. p5.js reads the webcam (or mouse/microphone) as a "sensor," ml5.js trains a live classifier in-browser, and Claude does the narrating, either through a small shared server-side proxy or a personal, spend-capped API key entered directly in the page.
 
 **Optional hardware track:** Micro:bit (browser-based MakeCode, built-in sensors, native AI tools at microbit.org/ai) remains available for groups who want a physical-sensor version of the activities, or for Day 3 project work. The micro:bit's processor can't run large models directly, so sensor data still bridges to an LLM via a Python serial script on a laptop; Edge Impulse can be used to flash small ML models directly onto the device.
 
-**Programming level:** The browser-based activities need zero programming from participants — drag, click, watch. A light-Python track remains available on the hardware path (10–20 line scripts, API calls) for participants who want to look under the hood or run the micro:bit option. Participants self-select on Day 1.
+**Programming level:** The browser-based activities require zero programming from participants—drag, click, watch. A light-Python track remains available on the hardware path (10–20 line scripts, API calls) for participants who want to look under the hood or run the micro:bit option.
 
 ---
 
