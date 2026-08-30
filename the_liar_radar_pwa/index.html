@@ -46,6 +46,9 @@
           <span id="hud-pill-text">STANDBY</span>
         </div>
         <div class="hud-hint" id="viewfinder-hint">tap below to arm the camera &amp; mic</div>
+        <button id="flip-cam-btn" class="hud-flip-btn" aria-label="Flip camera" hidden>
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17 2l4 4-4 4"/><path d="M3 11V9a4 4 0 014-4h14"/><path d="M7 22l-4-4 4-4"/><path d="M21 13v2a4 4 0 01-4 4H3"/></svg>
+        </button>
       </div>
 
       <div class="readout-row" id="readout-row" hidden>
@@ -105,7 +108,7 @@
     <div id="settings-backdrop" class="backdrop"></div>
     <div id="settings-sheet" class="sheet" role="dialog" aria-label="Settings">
       <div class="sheet-header">
-        <div class="title">SYSTEM CONFIG</div>
+        <div class="title">SYSTEM CONFIG <span class="version-tag">v1.2</span></div>
         <button id="settings-close-btn" class="icon-btn" aria-label="Close">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
@@ -137,6 +140,7 @@
       </div>
       <p class="fineprint">Camera and mic can't be disabled from here once granted &mdash; that's the browser's call, not the page's. If either shows DENIED, re-enable it in iOS Settings &rarr; Safari &rarr; this site, then reload.</p>
       <p class="fineprint">Motion, GPS, and network readings are design directions explored on the desktop mockups, not implemented in this test build.</p>
+      <p class="fineprint">v1.2 &mdash; added front/back camera flip. Field reports: clinical biosignal readouts and justification restored; the closing recommendation now stays procedural in form (&ldquo;Recommended next step: &hellip;&rdquo;) but goes whimsical in content.</p>
 
       <button id="settings-done-btn" class="btn btn-primary" style="margin-top:14px;">DONE</button>
     </div>

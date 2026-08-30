@@ -1,14 +1,19 @@
 // The Confident Liar — Radar edition, installable PWA quick test.
+// v1.2 — restored clinical biosignal mapping (see CHANGELOG note near
+// the bottom of the Settings sheet in index.html); report structure is
+// now: clinical opener -> biosignal-justified clauses -> a "recommended
+// next step" that stays procedural in form but goes whimsical in
+// content.
 //
 // Real sensing this time, no p5.js: getUserMedia gives a live <video>
-// feed, a small offscreen canvas samples it every ~160ms for
-// brightness and frame-to-frame motion (same math as the other
-// the_liar sketches), and the Web Audio API's AnalyserNode reads mic
-// RMS level directly. Those three real numbers get stretched into
-// invented EEG/HRV/EDA readings via the exact same lerp formulas as
-// the_liar_xfiles_unplug, then a case file's phrase bank assembles a
-// field report from them — same two-lies mechanism, just running as
-// an installable app instead of a page in an editor.
+// feed (front or back, flippable), a small offscreen canvas samples it
+// every ~160ms for brightness and frame-to-frame motion (same math as
+// the other the_liar sketches), and the Web Audio API's AnalyserNode
+// reads mic RMS level directly. Those three real numbers get stretched
+// into invented EEG/HRV/EDA readings via the exact same lerp formulas
+// as the_liar_xfiles_unplug, then a case file's phrase bank assembles a
+// field report from them — same two-lies mechanism, just running as an
+// installable app instead of a page in an editor.
 //
 // Honesty note: Motion/GPS/network sensors from the design
 // exploration are NOT implemented here. Only camera + mic are real.
@@ -86,9 +91,9 @@ const CLAUSE_BANKS = {
       (r) => `A shift to ${r.scl}μS with ${r.scr} spontaneous responses per minute is the signature we associate with restraint-and-release.`,
     ],
     closers: [
-      "Missing time of approximately 20 minutes detected; recommend checking for a faint circular mark at the implant site.",
-      "Recommend checking for unexplained nosebleeds and a missing personal item.",
-      "Subject's account of losing track of time is consistent with a mobile retrieval scenario.",
+      "Recommended next step: log the ~20 minutes of missing time and check the implant site for a faint circular mark — filed, unofficially, as a complimentary souvenir.",
+      "Recommended next step: screen for unexplained nosebleeds and a missing personal item; note the item as \"on loan to persons unknown\" pending recovery.",
+      "Recommended next step: record the subject's account of lost time as consistent with a mobile retrieval scenario, and advise them the mothership rarely returns borrowed socks.",
     ],
   },
   reptilian: {
@@ -106,9 +111,9 @@ const CLAUSE_BANKS = {
       (r) => `Sharp EDA spikes near ${r.scl}μS match the known "mask recalibration" pattern shapeshifters exhibit under fluorescent lighting.`,
     ],
     closers: [
-      "Recommend visual confirmation: check for a slow, deliberate blink.",
-      "The disguise appears to be under strain — recommend re-testing in natural light.",
-      "Subject should avoid direct fluorescent light for the remainder of the observation.",
+      "Recommended next step: obtain visual confirmation via a slow, deliberate blink test; chart the result as \"inconclusive but suspicious.\"",
+      "Recommended next step: re-test under natural light, given the documented strain on the disguise — consider it a courtesy warning to reapply the mask.",
+      "Recommended next step: limit direct fluorescent exposure for the remainder of the observation window, and offer a light snack; professionally speaking, it lowers defenses.",
     ],
   },
   timetravel: {
@@ -126,9 +131,9 @@ const CLAUSE_BANKS = {
       (r) => `Skin conductance shows a stutter pattern near ${r.scl}μS, consistent with a jump that failed to fully complete.`,
     ],
     closers: [
-      "Recommend asking the subject what day they believe it is.",
-      "Recommend monitoring for a follow-up correction jump within the hour.",
-      "Subject may not yet be aware travel has occurred.",
+      "Recommended next step: confirm the subject's believed current date for the case file; discrepancies are expected and, frankly, part of the fun.",
+      "Recommended next step: monitor for a follow-up correction jump within the hour, and keep a snack on hand — temporal drift is famously exhausting.",
+      "Recommended next step: hold off notifying the subject that travel has occurred until symptoms stabilize; let them arrive at the realization on their own schedule.",
     ],
   },
   mindcontrol: {
@@ -146,9 +151,9 @@ const CLAUSE_BANKS = {
       (r) => `A synchronized dip to ${r.scl}μS suggests a momentary command was issued and received.`,
     ],
     closers: [
-      "Recommend isolating the subject from windows for the next hour.",
-      "Intent reads as reconnaissance-level, not yet full override.",
-      "Subject may report a brief, unexplained lapse in attention.",
+      "Recommended next step: relocate the subject away from windows for the observation hour; log the precaution as \"standard, not paranoid.\"",
+      "Recommended next step: classify current activity as reconnaissance-level, not full override, and revisit in one hour — politely, in case anyone is listening.",
+      "Recommended next step: note any brief unexplained attention lapses in the file, and wave cheerfully if the subject seems to \"reboot\" mid-sentence.",
     ],
   },
 };
@@ -177,6 +182,7 @@ const LIGHT_GAIN = 1.8;
 const MIC_GAIN = 5;
 
 let stream = null;
+let currentFacingMode = "user";
 let camPermission = "not-requested";
 let micPermission = "not-requested";
 let audioCtx = null;
@@ -316,7 +322,7 @@ async function requestAccess() {
     if (audioCtx.state === "suspended") await audioCtx.resume();
 
     stream = await navigator.mediaDevices.getUserMedia({
-      video: { facingMode: "user" },
+      video: { facingMode: currentFacingMode },
       audio: true,
     });
 
@@ -334,11 +340,13 @@ async function requestAccess() {
 
     els.video.srcObject = stream;
     els.video.classList.add("is-live");
+    els.video.classList.toggle("is-mirrored", currentFacingMode === "user");
     els.hudPill.classList.add("is-live");
     els.hudPillText.textContent = "LIVE";
     els.viewfinderHint.hidden = true;
     els.readoutRow.hidden = false;
     els.captureStatusLabel.textContent = "LIVE FEED";
+    els.flipBtn.hidden = false;
 
     startSensing();
 
@@ -358,6 +366,30 @@ async function requestAccess() {
   }
 
   updatePermissionUI();
+}
+
+async function switchCamera() {
+  if (!stream) return;
+  els.flipBtn.disabled = true;
+  const newFacing = currentFacingMode === "user" ? "environment" : "user";
+
+  try {
+    const newVideoStream = await navigator.mediaDevices.getUserMedia({
+      video: { facingMode: { ideal: newFacing } },
+    });
+    const newVideoTrack = newVideoStream.getVideoTracks()[0];
+    const oldVideoTrack = stream.getVideoTracks()[0];
+    if (oldVideoTrack) oldVideoTrack.stop();
+
+    stream = new MediaStream([newVideoTrack, ...stream.getAudioTracks()]);
+    els.video.srcObject = stream;
+    currentFacingMode = newFacing;
+    els.video.classList.toggle("is-mirrored", currentFacingMode === "user");
+  } catch (err) {
+    showError(`Couldn't switch camera (${err && err.message ? err.message : "unknown error"}).`);
+  }
+
+  els.flipBtn.disabled = false;
 }
 
 function runScan() {
@@ -482,6 +514,7 @@ function init() {
     captureStatusLabel: q("capture-status-label"),
     captureError: q("capture-error"),
     primaryBtn: q("primary-btn"),
+    flipBtn: q("flip-cam-btn"),
     valBrightness: q("val-brightness"),
     valMotion: q("val-motion"),
     valMic: q("val-mic"),
@@ -501,6 +534,7 @@ function init() {
   };
 
   els.primaryBtn.addEventListener("click", requestAccess);
+  els.flipBtn.addEventListener("click", switchCamera);
   els.newScanBtn.addEventListener("click", () => showScreen("screen-capture"));
   els.copyBtn.addEventListener("click", async () => {
     try {

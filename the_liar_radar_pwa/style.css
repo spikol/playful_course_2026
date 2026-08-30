@@ -205,6 +205,28 @@ html, body {
   letter-spacing: 0.04em;
 }
 
+.hud-flip-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid rgba(110,198,255,0.4);
+  background: rgba(12,14,17,0.55);
+  color: var(--accent-2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  -webkit-backdrop-filter: blur(2px);
+  backdrop-filter: blur(2px);
+}
+.hud-flip-btn:active { background: rgba(110,198,255,0.2); }
+.hud-flip-btn:disabled { opacity: 0.4; }
+
+#cam-video.is-mirrored { transform: scaleX(-1); }
+
 /* ---------- Readouts ---------- */
 
 .readout-row {
@@ -382,6 +404,15 @@ html, body {
   align-items: center;
   justify-content: space-between;
   margin-bottom: 14px;
+}
+
+.version-tag {
+  font-size: 9px;
+  font-weight: 400;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+  margin-left: 4px;
+  vertical-align: middle;
 }
 
 .sheet-section-label {
