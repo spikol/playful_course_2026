@@ -160,6 +160,13 @@ const CLAUSE_BANKS = {
 
 const SIGNAL_ORDER = ["eeg", "hrv", "eda"];
 
+const SUBJECTS = [
+  { key: "self", label: "Myself" },
+  { key: "loved-one", label: "A loved one" },
+  { key: "friend", label: "A friend" },
+  { key: "pet", label: "A pet" },
+];
+
 function pickRandom(arr) {
   return arr[Math.floor(Math.random() * arr.length)];
 }
@@ -265,7 +272,7 @@ function stopSensing() {
 
 // ---------- App state ----------
 
-const settings = { randomMode: true, pinnedCase: null };
+const settings = { randomMode: true, pinnedCase: null, subject: null };
 let lastReportText = "";
 
 // ---------- DOM refs (grabbed on init) ----------
@@ -424,8 +431,9 @@ function showResult(caseInfo, report, readingsByType, wasRandom) {
   const resultScreen = q("screen-result");
   resultScreen.style.setProperty("--case-color", `var(${caseInfo.colorVar})`);
 
+  const subjectLabel = (SUBJECTS.find((s) => s.key === settings.subject) || {}).label || "Unknown";
   els.caseTitle.textContent = caseInfo.label.toUpperCase();
-  els.modeBadgeText.textContent = wasRandom ? "RANDOM ASSIGN" : "PINNED MODE";
+  els.modeBadgeText.textContent = `${wasRandom ? "RANDOM ASSIGN" : "PINNED MODE"} · ${subjectLabel.toUpperCase()}`;
   els.lockMiniCore.innerHTML = caseInfo.icon;
   els.lockMiniCore.style.color = `var(${caseInfo.colorVar})`;
 
@@ -462,6 +470,19 @@ function typeReport(text) {
       clearInterval(id);
     }
   }, 14);
+}
+
+// ---------- Intro / subject selection ----------
+
+function selectSubject(key) {
+  settings.subject = key;
+  document.querySelectorAll(".subject-card").forEach((card) => {
+    card.classList.toggle("is-selected", card.dataset.subject === key);
+  });
+  const subject = SUBJECTS.find((s) => s.key === key);
+  els.introBeginBtn.disabled = false;
+  els.introBeginBtn.textContent = "BEGIN SCAN";
+  els.subjectChipText.textContent = `SUBJECT: ${subject.label.toUpperCase()}`;
 }
 
 // ---------- Settings sheet ----------
@@ -506,6 +527,10 @@ function closeSettings() {
 
 function init() {
   els = {
+    introBeginBtn: q("intro-begin-btn"),
+    subjectChip: q("subject-chip"),
+    subjectChipText: q("subject-chip-text"),
+
     video: q("cam-video"),
     hudPill: q("hud-pill"),
     hudPillText: q("hud-pill-text"),
@@ -532,6 +557,12 @@ function init() {
     randomToggle: q("random-toggle"),
     casePills: q("case-pills"),
   };
+
+  document.querySelectorAll(".subject-card").forEach((card) => {
+    card.addEventListener("click", () => selectSubject(card.dataset.subject));
+  });
+  els.introBeginBtn.addEventListener("click", () => showScreen("screen-capture"));
+  els.subjectChip.addEventListener("click", () => showScreen("screen-intro"));
 
   els.primaryBtn.addEventListener("click", requestAccess);
   els.flipBtn.addEventListener("click", switchCamera);

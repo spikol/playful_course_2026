@@ -24,12 +24,52 @@
 <body>
   <div id="app">
 
+    <!-- ---------- Intro / case intake ---------- -->
+    <section id="screen-intro" class="screen is-active">
+      <header class="topbar">
+        <div class="topbar-text">
+          <div class="eyebrow">CASE INTAKE</div>
+          <div class="title">WHO ARE WE SCANNING?</div>
+        </div>
+      </header>
+
+      <p class="intro-copy">Point the sensors at someone &mdash; you, someone you love, a friend, or a pet &mdash; and we'll turn a few real readings into a very confident field report.</p>
+
+      <div class="subject-grid" id="subject-grid">
+        <button type="button" class="subject-card" data-subject="self">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="3.4"/><path d="M4.8 20c0-4 3.2-6.6 7.2-6.6s7.2 2.6 7.2 6.6"/></svg>
+          <span class="subject-label">Myself</span>
+        </button>
+        <button type="button" class="subject-card" data-subject="loved-one">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19.5s-7-4.2-9-8.6A4.7 4.7 0 0112 6.8a4.7 4.7 0 019 4.1c-2 4.4-9 8.6-9 8.6z"/></svg>
+          <span class="subject-label">A loved one</span>
+        </button>
+        <button type="button" class="subject-card" data-subject="friend">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="2.6"/><path d="M3.8 20c0-3.4 2.3-5.7 5.2-5.7s5.2 2.3 5.2 5.7"/><circle cx="17.5" cy="9.2" r="2.1"/><path d="M14.4 20c.3-2.7 1.9-4.5 4.2-4.5"/></svg>
+          <span class="subject-label">A friend</span>
+        </button>
+        <button type="button" class="subject-card" data-subject="pet">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="7.2" cy="8.4" r="1.5"/><circle cx="11.7" cy="6" r="1.5"/><circle cx="16.2" cy="8.4" r="1.5"/><path d="M12 11.6c-2.9 0-4.9 2-4.9 4.2 0 1.7 1.5 2.7 3 2 .9-.4 1.9-.4 2.8 0 1.5.7 3-.3 3-2 0-2.2-2-4.2-4.9-4.2z"/></svg>
+          <span class="subject-label">A pet</span>
+        </button>
+      </div>
+
+      <p class="fineprint intro-fineprint">This is playful fiction, not a medical or scientific instrument &mdash; nothing here diagnoses anything real, for people or pets.</p>
+
+      <div class="bottom-bar">
+        <button id="intro-begin-btn" class="btn btn-primary" disabled>CHOOSE A SUBJECT TO BEGIN</button>
+      </div>
+    </section>
+
     <!-- ---------- Capture ---------- -->
-    <section id="screen-capture" class="screen is-active">
+    <section id="screen-capture" class="screen">
       <header class="topbar">
         <div class="topbar-text">
           <div class="eyebrow" id="capture-status-label">STANDBY</div>
           <div class="title" id="capture-title">AWAITING LOCK</div>
+          <button type="button" class="subject-chip" id="subject-chip" aria-label="Change subject">
+            <span id="subject-chip-text">SUBJECT: &mdash;</span>
+          </button>
         </div>
         <button id="gear-btn" class="icon-btn" aria-label="Settings">
           <svg width="17" height="17" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><line x1="4" y1="6" x2="20" y2="6"/><circle cx="9" cy="6" r="2"/><line x1="4" y1="12" x2="20" y2="12"/><circle cx="15" cy="12" r="2"/><line x1="4" y1="18" x2="20" y2="18"/><circle cx="9" cy="18" r="2"/></svg>
@@ -108,7 +148,7 @@
     <div id="settings-backdrop" class="backdrop"></div>
     <div id="settings-sheet" class="sheet" role="dialog" aria-label="Settings">
       <div class="sheet-header">
-        <div class="title">SYSTEM CONFIG <span class="version-tag">v1.2</span></div>
+        <div class="title">SYSTEM CONFIG <span class="version-tag">v1.3</span></div>
         <button id="settings-close-btn" class="icon-btn" aria-label="Close">
           <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
         </button>
@@ -140,6 +180,7 @@
       </div>
       <p class="fineprint">Camera and mic can't be disabled from here once granted &mdash; that's the browser's call, not the page's. If either shows DENIED, re-enable it in iOS Settings &rarr; Safari &rarr; this site, then reload.</p>
       <p class="fineprint">Motion, GPS, and network readings are design directions explored on the desktop mockups, not implemented in this test build.</p>
+      <p class="fineprint">v1.3 &mdash; added a case-intake intro screen (myself / a loved one / a friend / a pet) before the scan, to set the tone up front. Tap the SUBJECT chip on the scan screen to change it.</p>
       <p class="fineprint">v1.2 &mdash; added front/back camera flip. Field reports: clinical biosignal readouts and justification restored; the closing recommendation now stays procedural in form (&ldquo;Recommended next step: &hellip;&rdquo;) but goes whimsical in content.</p>
 
       <button id="settings-done-btn" class="btn btn-primary" style="margin-top:14px;">DONE</button>
