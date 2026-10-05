@@ -26,6 +26,11 @@ Three reasons, and they shape how you should write:
 
 Document, one file, roughly 600–1000 words plus any sketches or screenshots. Use the template below. Keep the headings; they become the site structure.
 
+**Downloads**
+
+- 📄 [Word template (.docx)](https://spikol.github.io/playful_course_2026/content/activities/final_project.docx) — the same template as below, ready to fill in
+- 📄 [This assignment brief (PDF)](https://spikol.github.io/playful_course_2026/Final_Project_The_Playful_AI_Cookbook.pdf) — printable version of this page
+
 ------
 
 ## Template
