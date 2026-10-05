@@ -18,4 +18,8 @@ What changed between August and now — in the activity, in your understanding, 
 
 See the [full programme](/Didactic_Workshop_IOT_details.md#day-4--back-from-the-classroom-what-actually-happened) for the daily agenda.
 
-Materials for this day have not been published yet — check back closer to the October block.
+## Materials
+
+- [Final Project template (Word, .docx)](https://spikol.github.io/playful_course_2026/content/activities/final_project.docx) — start reworking your activity into the Cookbook format during the revision sprint
+
+Further materials for this day will be added closer to the session.

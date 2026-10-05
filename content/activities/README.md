@@ -2,6 +2,8 @@
 
 Teaching guides, briefings, slide decks, and printable materials for the workshop. Use the top navigation to browse by day, or jump straight to something below.
 
+**📄 [Final Project template (Word, .docx)](https://spikol.github.io/playful_course_2026/content/activities/final_project.docx)** — download and fill in for the Playful AI Cookbook final project.
+
 ## Slides
 
 - [Course Overview & Intended Learning Outcomes](/content/activities/Course_Overview_and_Learning_Outcomes.md) — whole-course summary deck
