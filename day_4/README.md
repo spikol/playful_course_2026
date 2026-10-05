@@ -20,6 +20,7 @@ See the [full programme](/Didactic_Workshop_IOT_details.md#day-4--back-from-the-
 
 ## Materials
 
+- [Final Project — The Playful AI Cookbook (assignment brief, PDF)](https://spikol.github.io/playful_course_2026/Final_Project_The_Playful_AI_Cookbook.pdf)
 - [Final Project template (Word, .docx)](https://spikol.github.io/playful_course_2026/content/activities/final_project.docx) — start reworking your activity into the Cookbook format during the revision sprint
 
 Further materials for this day will be added closer to the session.
